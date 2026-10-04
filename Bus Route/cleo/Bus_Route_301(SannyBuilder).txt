@@ -1,0 +1,6005 @@
+{$CLEO .cs}
+
+script_name 'BUS'
+wait 15000
+print_help 'DEUCE'
+generate_random_int_in_range 0@ = random_int_in_ranges 0 5000
+
+:BUS_37
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2139.093 1048.8521 radius 20.0 20.0
+goto_if_false @BUS_143
+1@ = 2039.75
+2@ = 1005.35
+13@ = 180.0
+print_help 'BUS_T1'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_143
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2075.05 1178.6 radius 20.0 20.0
+goto_if_false @BUS_249
+1@ = 2139.093
+2@ = 1048.8521
+13@ = 300.0
+print_help 'BUS_T1'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_249
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2075.05 1355.35 radius 20.0 20.0
+goto_if_false @BUS_355
+1@ = 2075.05
+2@ = 1178.6
+13@ = 0.0
+print_help 'BUS_T1'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_355
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2075.05 1514.85 radius 20.0 20.0
+goto_if_false @BUS_461
+1@ = 2075.05
+2@ = 1355.35
+13@ = 0.0
+print_help 'BUS_T1'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_461
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2075.05 1661.95 radius 20.0 20.0
+goto_if_false @BUS_567
+1@ = 2075.05
+2@ = 1514.85
+13@ = 0.0
+print_help 'BUS_T1'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_567
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2152.96 1863.55 radius 20.0 20.0
+goto_if_false @BUS_673
+1@ = 2075.05
+2@ = 1661.95
+13@ = 0.0
+print_help 'BUS_T1'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_673
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2154.76 1994.45 radius 20.0 20.0
+goto_if_false @BUS_779
+1@ = 2152.96
+2@ = 1863.55
+13@ = 333.0
+print_help 'BUS_T1'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_779
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2154.76 2113.25 radius 20.0 20.0
+goto_if_false @BUS_885
+1@ = 2154.76
+2@ = 1994.45
+13@ = 0.0
+print_help 'BUS_T1'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_885
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2154.76 2191.95 radius 20.0 20.0
+goto_if_false @BUS_991
+1@ = 2154.76
+2@ = 2113.25
+13@ = 0.0
+print_help 'BUS_T1'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_991
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2228.8601 2393.55 radius 20.0 20.0
+goto_if_false @BUS_1097
+1@ = 2154.76
+2@ = 2191.95
+13@ = 0.0
+print_help 'BUS_T1'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_1097
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2087.26 2455.55 radius 20.0 20.0
+goto_if_false @BUS_1203
+1@ = 2228.8601
+2@ = 2393.55
+13@ = 356.0
+print_help 'BUS_T1'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_1203
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 1997.36 2395.75 radius 20.0 20.0
+goto_if_false @BUS_1309
+1@ = 2087.26
+2@ = 2455.55
+13@ = 90.0
+print_help 'BUS_T1'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_1309
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 1997.468 2471.4719 radius 20.0 20.0
+goto_if_false @BUS_1415
+1@ = 1997.36
+2@ = 2395.75
+13@ = 90.0
+print_help 'BUS_T2'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_1415
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2055.3601 2322.95 radius 20.0 20.0
+goto_if_false @BUS_1521
+1@ = 1997.468
+2@ = 2471.4719
+13@ = 0.0
+print_help 'BUS_T2'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_1521
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2119.76 2178.3501 radius 20.0 20.0
+goto_if_false @BUS_1627
+1@ = 2055.3601
+2@ = 2322.95
+13@ = 307.0
+print_help 'BUS_T2'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_1627
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2119.76 2063.75 radius 20.0 20.0
+goto_if_false @BUS_1733
+1@ = 2119.76
+2@ = 2178.3501
+13@ = 180.0
+print_help 'BUS_T2'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_1733
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2119.76 1882.65 radius 20.0 20.0
+goto_if_false @BUS_1839
+1@ = 2119.76
+2@ = 2063.75
+13@ = 180.0
+print_help 'BUS_T2'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_1839
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2039.75 1545.0 radius 20.0 20.0
+goto_if_false @BUS_1945
+1@ = 2119.76
+2@ = 1882.65
+13@ = 180.0
+print_help 'BUS_T2'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_1945
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2039.75 1346.75 radius 20.0 20.0
+goto_if_false @BUS_2051
+1@ = 2039.75
+2@ = 1545.0
+13@ = 180.0
+print_help 'BUS_T2'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_2051
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2039.75 1145.0 radius 20.0 20.0
+goto_if_false @BUS_2157
+1@ = 2039.75
+2@ = 1346.75
+13@ = 180.0
+print_help 'BUS_T2'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_2157
+wait 0
+if 
+  locate_char_any_means_2d $PLAYER_ACTOR sphere 0 near_point 2039.75 1005.35 radius 20.0 20.0
+goto_if_false @BUS_37
+1@ = 2039.75
+2@ = 1145.0
+13@ = 180.0
+print_help 'BUS_T2'
+wait 3000
+print_help 'ON_BUS'
+goto @BUS_2263
+
+:BUS_2263
+wait 0
+generate_random_int_in_range 3@ = random_int_in_ranges 0 2
+if 
+  3@ == 0
+goto_if_false @BUS_2316
+goto @BUS_2301
+
+:BUS_2301
+4@ = 431
+goto @BUS_2324
+
+:BUS_2316
+4@ = 437
+
+:BUS_2324
+request_model 4@
+request_model #MALE01
+load_all_models_now 
+goto @BUS_2342
+
+:BUS_2342
+wait 0
+if and
+  has_model_loaded 4@
+  has_model_loaded #MALE01
+goto_if_false @BUS_2342
+get_offset_from_char_in_world_coords 5@ 6@ 7@ from_actor $PLAYER_ACTOR with_offset 0.0 0.0 0.0
+wait 0@
+create_car 8@ = create_car 4@ at 1@ 2@ 10.5
+set_car_heading 8@ Z_angle_to 13@
+change_car_colour 8@ primary_color_to 1 secondary_color_to 1
+create_char_inside_car 9@ = create_actor_pedtype PedType.CivMale model #MALE01 in_car 8@
+mark_model_as_no_longer_needed 4@
+mark_model_as_no_longer_needed #MALE01
+generate_random_int_in_range 10@ = random_int_in_ranges 25000 40000
+generate_random_int_in_range 11@ = random_int_in_ranges 5000 10000
+wait 0@
+goto @BUS_2493
+
+:BUS_2493
+if 
+  2@ == 1005.35
+goto_if_false @BUS_2521
+goto @BUS_48056
+
+:BUS_2521
+if 
+  2@ == 1048.8521
+goto_if_false @BUS_2549
+goto @BUS_4964
+
+:BUS_2549
+if 
+  2@ == 1178.6
+goto_if_false @BUS_2577
+goto @BUS_7603
+
+:BUS_2577
+if 
+  2@ == 1355.35
+goto_if_false @BUS_2605
+goto @BUS_9605
+
+:BUS_2605
+if 
+  2@ == 1514.85
+goto_if_false @BUS_2633
+goto @BUS_11607
+
+:BUS_2633
+if 
+  2@ == 1661.95
+goto_if_false @BUS_2661
+goto @BUS_13609
+
+:BUS_2661
+if 
+  2@ == 1863.55
+goto_if_false @BUS_2689
+goto @BUS_15611
+
+:BUS_2689
+if 
+  2@ == 1994.45
+goto_if_false @BUS_2717
+goto @BUS_17613
+
+:BUS_2717
+if 
+  2@ == 2113.25
+goto_if_false @BUS_2745
+goto @BUS_19706
+
+:BUS_2745
+if 
+  2@ == 2191.95
+goto_if_false @BUS_2773
+goto @BUS_21799
+
+:BUS_2773
+if 
+  2@ == 2393.55
+goto_if_false @BUS_2801
+goto @BUS_23892
+
+:BUS_2801
+if 
+  2@ == 2455.55
+goto_if_false @BUS_2829
+goto @BUS_25803
+
+:BUS_2829
+if 
+  2@ == 2395.75
+goto_if_false @BUS_2857
+goto @BUS_27805
+
+:BUS_2857
+if 
+  2@ == 2471.4719
+goto_if_false @BUS_2885
+goto @BUS_30311
+
+:BUS_2885
+if 
+  2@ == 2322.95
+goto_if_false @BUS_2913
+goto @BUS_33405
+
+:BUS_2913
+if 
+  2@ == 2178.3501
+goto_if_false @BUS_2941
+goto @BUS_35498
+
+:BUS_2941
+if 
+  2@ == 2063.75
+goto_if_false @BUS_2969
+goto @BUS_37591
+
+:BUS_2969
+if 
+  2@ == 1882.65
+goto_if_false @BUS_2997
+goto @BUS_39684
+
+:BUS_2997
+if 
+  2@ == 1545.0
+goto_if_false @BUS_3025
+goto @BUS_41777
+
+:BUS_3025
+if 
+  2@ == 1346.75
+goto_if_false @BUS_3053
+goto @BUS_43870
+
+:BUS_3053
+if 
+  2@ == 1145.0
+goto_if_false @BUS_2493
+goto @BUS_45963
+
+:BUS_3081
+wait 2000
+0004: 14@ = 10@ // Note: the incorrect math opcode was used here
+gosub @BUS_49589
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49928
+wait 10@
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 11@
+boat_stop 8@
+task_leave_car 9@ exit_car 8@
+gosub @BUS_49495
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_4578
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_4578
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49655
+goto @BUS_4964
+
+:BUS_4964
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2147.6931 1053.489 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2147.6931 1053.489 radius 3.0 3.0
+goto_if_false @BUS_4964
+goto @BUS_5055
+
+:BUS_5055
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2153.6521 1053.3669 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2153.6521 1053.3669 radius 3.0 3.0
+goto_if_false @BUS_5055
+goto @BUS_5146
+
+:BUS_5146
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2158.2471 1051.48 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2158.2471 1051.48 radius 3.0 3.0
+goto_if_false @BUS_5146
+goto @BUS_5237
+
+:BUS_5237
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2160.05 1041.5 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2160.05 1041.5 radius 3.0 3.0
+goto_if_false @BUS_5237
+goto @BUS_5328
+
+:BUS_5328
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2155.6499 1021.5 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2155.6499 1021.5 radius 3.0 3.0
+goto_if_false @BUS_5328
+goto @BUS_5419
+
+:BUS_5419
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2155.6499 1007.6 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2155.6499 1007.6 radius 3.0 3.0
+goto_if_false @BUS_5419
+goto @BUS_5510
+
+:BUS_5510
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2165.3501 995.6 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2165.3501 995.6 radius 3.0 3.0
+goto_if_false @BUS_5510
+goto @BUS_5601
+
+:BUS_5601
+wait 0
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2072.05 1158.6 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2072.05 1158.6 radius 3.0 3.0
+goto_if_false @BUS_5601
+goto @BUS_5692
+
+:BUS_5692
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2075.05 1178.6 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2075.05 1178.6 radius 3.0 3.0
+goto_if_false @BUS_5692
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_6661
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_6661
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49668
+goto @BUS_7603
+
+:BUS_7603
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2072.05 1335.35 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2072.05 1335.35 radius 3.0 3.0
+goto_if_false @BUS_7603
+goto @BUS_7694
+
+:BUS_7694
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2075.05 1355.35 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2075.05 1355.35 radius 3.0 3.0
+goto_if_false @BUS_7694
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_8663
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_8663
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49681
+goto @BUS_9605
+
+:BUS_9605
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2072.05 1494.85 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2072.05 1494.85 radius 3.0 3.0
+goto_if_false @BUS_9605
+goto @BUS_9696
+
+:BUS_9696
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2075.05 1514.85 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2075.05 1514.85 radius 3.0 3.0
+goto_if_false @BUS_9696
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_10665
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_10665
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49694
+goto @BUS_11607
+
+:BUS_11607
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2072.05 1641.95 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2072.05 1641.95 radius 3.0 3.0
+goto_if_false @BUS_11607
+goto @BUS_11698
+
+:BUS_11698
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2075.05 1661.95 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2075.05 1661.95 radius 3.0 3.0
+goto_if_false @BUS_11698
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_12667
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_12667
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49707
+goto @BUS_13609
+
+:BUS_13609
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2144.3601 1850.15 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2144.3601 1850.15 radius 3.0 3.0
+goto_if_false @BUS_13609
+goto @BUS_13700
+
+:BUS_13700
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2152.96 1863.55 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2152.96 1863.55 radius 3.0 3.0
+goto_if_false @BUS_13700
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_14669
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_14669
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49720
+goto @BUS_15611
+
+:BUS_15611
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2151.76 1974.45 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2151.76 1974.45 radius 3.0 3.0
+goto_if_false @BUS_15611
+goto @BUS_15702
+
+:BUS_15702
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2154.76 1994.45 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2154.76 1994.45 radius 3.0 3.0
+goto_if_false @BUS_15702
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_16671
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_16671
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49733
+goto @BUS_17613
+
+:BUS_17613
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2153.6599 2083.25 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2153.6599 2083.25 radius 3.0 3.0
+goto_if_false @BUS_17613
+goto @BUS_17704
+
+:BUS_17704
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2154.76 2093.25 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2154.76 2093.25 radius 3.0 3.0
+goto_if_false @BUS_17704
+goto @BUS_17795
+
+:BUS_17795
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2154.76 2113.25 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2154.76 2113.25 radius 3.0 3.0
+goto_if_false @BUS_17795
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_18764
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_18764
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49746
+goto @BUS_19706
+
+:BUS_19706
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2149.1599 2161.95 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2149.1599 2161.95 radius 3.0 3.0
+goto_if_false @BUS_19706
+goto @BUS_19797
+
+:BUS_19797
+wait 0
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2154.76 2171.95 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2154.76 2171.95 radius 3.0 3.0
+goto_if_false @BUS_19797
+goto @BUS_19888
+
+:BUS_19888
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2154.76 2191.95 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2154.76 2191.95 radius 3.0 3.0
+goto_if_false @BUS_19888
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_20857
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_20857
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49759
+goto @BUS_21799
+
+:BUS_21799
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2225.1599 2377.6499 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2225.1599 2377.6499 radius 3.0 3.0
+goto_if_false @BUS_21799
+goto @BUS_21890
+
+:BUS_21890
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2228.3601 2389.95 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2228.3601 2389.95 radius 3.0 3.0
+goto_if_false @BUS_21890
+goto @BUS_21981
+
+:BUS_21981
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2228.8601 2393.55 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2228.8601 2393.55 radius 3.0 3.0
+goto_if_false @BUS_21981
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_22950
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_22950
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49772
+goto @BUS_23892
+
+:BUS_23892
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2087.26 2455.55 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2087.26 2455.55 radius 3.0 3.0
+goto_if_false @BUS_23892
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_24861
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_24861
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49785
+goto @BUS_25803
+
+:BUS_25803
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2007.36 2395.75 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2007.36 2395.75 radius 3.0 3.0
+goto_if_false @BUS_25803
+goto @BUS_25894
+
+:BUS_25894
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1997.36 2395.75 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1997.36 2395.75 radius 3.0 3.0
+goto_if_false @BUS_25894
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_26863
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_26863
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49798
+goto @BUS_27805
+
+:BUS_27805
+wait 0
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1957.36 2395.75 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1957.36 2395.75 radius 3.0 3.0
+goto_if_false @BUS_27805
+goto @BUS_27896
+
+:BUS_27896
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1964.42 2416.02 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1964.42 2416.02 radius 3.0 3.0
+goto_if_false @BUS_27896
+goto @BUS_27987
+
+:BUS_27987
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1987.42 2414.6279 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1987.42 2414.6279 radius 3.0 3.0
+goto_if_false @BUS_27987
+goto @BUS_28078
+
+:BUS_28078
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1991.642 2434.7051 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1991.642 2434.7051 radius 3.0 3.0
+goto_if_false @BUS_28078
+goto @BUS_28169
+
+:BUS_28169
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1993.5811 2449.967 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1993.5811 2449.967 radius 3.0 3.0
+goto_if_false @BUS_28169
+goto @BUS_28260
+
+:BUS_28260
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1996.47 2460.47 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1996.47 2460.47 radius 3.0 3.0
+goto_if_false @BUS_28260
+goto @BUS_28351
+
+:BUS_28351
+wait 0
+0004: 14@ = 10@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1997.468 2471.4719 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1997.468 2471.4719 radius 3.0 3.0
+goto_if_false @BUS_28351
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49928
+wait 10@
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 11@
+boat_stop 8@
+task_leave_car 9@ exit_car 8@
+gosub @BUS_49542
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_29925
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_29925
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49811
+goto @BUS_30311
+
+:BUS_30311
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1997.03 2481.6201 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1997.03 2481.6201 radius 3.0 3.0
+goto_if_false @BUS_30311
+goto @BUS_30402
+
+:BUS_30402
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1986.73 2484.9199 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1986.73 2484.9199 radius 3.0 3.0
+goto_if_false @BUS_30402
+goto @BUS_30493
+
+:BUS_30493
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1983.12 2468.0601 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1983.12 2468.0601 radius 3.0 3.0
+goto_if_false @BUS_30493
+goto @BUS_30584
+
+:BUS_30584
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1983.12 2453.8899 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1983.12 2453.8899 radius 3.0 3.0
+goto_if_false @BUS_30584
+goto @BUS_30675
+
+:BUS_30675
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1983.12 2440.1899 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1983.12 2440.1899 radius 3.0 3.0
+goto_if_false @BUS_30675
+goto @BUS_30766
+
+:BUS_30766
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1969.3199 2432.5481 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1969.3199 2432.5481 radius 3.0 3.0
+goto_if_false @BUS_30766
+goto @BUS_30857
+
+:BUS_30857
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1958.37 2432.5481 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1958.37 2432.5481 radius 3.0 3.0
+goto_if_false @BUS_30857
+goto @BUS_30948
+
+:BUS_30948
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1947.42 2432.5481 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1947.42 2432.5481 radius 3.0 3.0
+goto_if_false @BUS_30948
+goto @BUS_31039
+
+:BUS_31039
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1943.96 2410.324 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1943.96 2410.324 radius 3.0 3.0
+goto_if_false @BUS_31039
+goto @BUS_31130
+
+:BUS_31130
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1948.76 2400.3201 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1948.76 2400.3201 radius 3.0 3.0
+goto_if_false @BUS_31130
+goto @BUS_31221
+
+:BUS_31221
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 1963.96 2391.02 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 1963.96 2391.02 radius 3.0 3.0
+goto_if_false @BUS_31221
+goto @BUS_31312
+
+:BUS_31312
+wait 0
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2041.0601 2336.75 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2041.0601 2336.75 radius 3.0 3.0
+goto_if_false @BUS_31312
+goto @BUS_31403
+
+:BUS_31403
+wait 0
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2048.76 2328.75 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2048.76 2328.75 radius 3.0 3.0
+goto_if_false @BUS_31403
+goto @BUS_31494
+
+:BUS_31494
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2055.3601 2322.95 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2055.3601 2322.95 radius 3.0 3.0
+goto_if_false @BUS_31494
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_32463
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_32463
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49824
+goto @BUS_33405
+
+:BUS_33405
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2122.26 2198.3501 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2122.26 2198.3501 radius 3.0 3.0
+goto_if_false @BUS_33405
+goto @BUS_33496
+
+:BUS_33496
+wait 0
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2119.76 2188.3501 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2119.76 2188.3501 radius 3.0 3.0
+goto_if_false @BUS_33496
+goto @BUS_33587
+
+:BUS_33587
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2119.76 2178.3501 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2119.76 2178.3501 radius 3.0 3.0
+goto_if_false @BUS_33587
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_34556
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_34556
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49837
+goto @BUS_35498
+
+:BUS_35498
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2122.26 2083.75 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2122.26 2083.75 radius 3.0 3.0
+goto_if_false @BUS_35498
+gosub @BUS_49589
+goto @BUS_35596
+
+:BUS_35596
+wait 0
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2119.76 2073.75 11.0
+if 
+  locate_car_2d 8@ sphere 0 near_point 2119.76 2073.75 radius 3.0 3.0
+goto_if_false @BUS_35596
+goto @BUS_35680
+
+:BUS_35680
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2119.76 2063.75 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2119.76 2063.75 radius 3.0 3.0
+goto_if_false @BUS_35680
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_36649
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_36649
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49850
+goto @BUS_37591
+
+:BUS_37591
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2122.26 1902.65 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2122.26 1902.65 radius 3.0 3.0
+goto_if_false @BUS_37591
+goto @BUS_37682
+
+:BUS_37682
+wait 0
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2119.76 1892.65 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2119.76 1892.65 radius 3.0 3.0
+goto_if_false @BUS_37682
+goto @BUS_37773
+
+:BUS_37773
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2119.76 1882.65 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2119.76 1882.65 radius 3.0 3.0
+goto_if_false @BUS_37773
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_38742
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_38742
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49863
+goto @BUS_39684
+
+:BUS_39684
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2041.75 1565.0 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2039.75 1565.0 radius 3.0 3.0
+goto_if_false @BUS_39684
+goto @BUS_39775
+
+:BUS_39775
+wait 0
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2039.75 1555.0 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2039.75 1555.0 radius 3.0 3.0
+goto_if_false @BUS_39775
+goto @BUS_39866
+
+:BUS_39866
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2039.75 1545.0 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2039.75 1545.0 radius 3.0 3.0
+goto_if_false @BUS_39866
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_40835
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_40835
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49876
+goto @BUS_41777
+
+:BUS_41777
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2041.75 1366.75 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2039.75 1366.75 radius 3.0 3.0
+goto_if_false @BUS_41777
+goto @BUS_41868
+
+:BUS_41868
+wait 0
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2039.75 1356.75 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2039.75 1356.75 radius 3.0 3.0
+goto_if_false @BUS_41868
+goto @BUS_41959
+
+:BUS_41959
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2039.75 1346.75 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2039.75 1346.75 radius 3.0 3.0
+goto_if_false @BUS_41959
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_42928
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_42928
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49889
+goto @BUS_43870
+
+:BUS_43870
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2041.75 1165.0 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2039.75 1165.0 radius 3.0 3.0
+goto_if_false @BUS_43870
+goto @BUS_43961
+
+:BUS_43961
+wait 0
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2039.75 1155.0 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2039.75 1155.0 radius 3.0 3.0
+goto_if_false @BUS_43961
+goto @BUS_44052
+
+:BUS_44052
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2039.75 1145.0 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2039.75 1145.0 radius 3.0 3.0
+goto_if_false @BUS_44052
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_45021
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_45021
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49902
+goto @BUS_45963
+
+:BUS_45963
+wait 0
+set_car_cruise_speed 8@ max_speed_to 15.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2041.75 1025.35 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2039.75 1025.35 radius 3.0 3.0
+goto_if_false @BUS_45963
+goto @BUS_46054
+
+:BUS_46054
+wait 0
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2039.75 1015.35 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2039.75 1015.35 radius 3.0 3.0
+goto_if_false @BUS_46054
+goto @BUS_46145
+
+:BUS_46145
+wait 0
+0004: 14@ = 11@ // Note: the incorrect math opcode was used here
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2039.75 1005.35 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2039.75 1005.35 radius 3.0 3.0
+goto_if_false @BUS_46145
+wait 2000
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 1.0
+open_car_door_a_bit 8@ door 5 rotation_to 1.0
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+
+:BUS_47114
+gosub_if_false @BUS_49239
+if 
+  0 >= 14@
+goto_if_false @BUS_47114
+open_car_door_a_bit 8@ door 3 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 3 rotation_to 0.0
+open_car_door_a_bit 8@ door 4 rotation_to 0.95
+open_car_door_a_bit 8@ door 5 rotation_to 0.95
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.9
+open_car_door_a_bit 8@ door 5 rotation_to 0.9
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.85
+open_car_door_a_bit 8@ door 5 rotation_to 0.85
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.8
+open_car_door_a_bit 8@ door 5 rotation_to 0.8
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.75
+open_car_door_a_bit 8@ door 5 rotation_to 0.75
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.7
+open_car_door_a_bit 8@ door 5 rotation_to 0.7
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.65
+open_car_door_a_bit 8@ door 5 rotation_to 0.65
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.6
+open_car_door_a_bit 8@ door 5 rotation_to 0.6
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.55
+open_car_door_a_bit 8@ door 5 rotation_to 0.55
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.5
+open_car_door_a_bit 8@ door 5 rotation_to 0.5
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.45
+open_car_door_a_bit 8@ door 5 rotation_to 0.45
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.4
+open_car_door_a_bit 8@ door 5 rotation_to 0.4
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.35
+open_car_door_a_bit 8@ door 5 rotation_to 0.35
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.3
+open_car_door_a_bit 8@ door 5 rotation_to 0.3
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.25
+open_car_door_a_bit 8@ door 5 rotation_to 0.25
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.2
+open_car_door_a_bit 8@ door 5 rotation_to 0.2
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.15
+open_car_door_a_bit 8@ door 5 rotation_to 0.15
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.1
+open_car_door_a_bit 8@ door 5 rotation_to 0.1
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.05
+open_car_door_a_bit 8@ door 5 rotation_to 0.05
+wait 30
+open_car_door_a_bit 8@ door 4 rotation_to 0.0
+open_car_door_a_bit 8@ door 5 rotation_to 0.0
+wait 2000
+gosub @BUS_49346
+gosub @BUS_49439
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49915
+goto @BUS_48056
+
+:BUS_48056
+wait 0
+set_car_cruise_speed 8@ max_speed_to 10.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2162.4199 975.553 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2162.4199 975.553 radius 3.0 3.0
+goto_if_false @BUS_48056
+goto @BUS_48147
+
+:BUS_48147
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2167.1201 983.953 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2167.1201 983.953 radius 3.0 3.0
+goto_if_false @BUS_48147
+goto @BUS_48238
+
+:BUS_48238
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2162.3201 992.353 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2162.3201 992.353 radius 3.0 3.0
+goto_if_false @BUS_48238
+goto @BUS_48329
+
+:BUS_48329
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2142.3201 994.953 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2142.3201 994.953 radius 3.0 3.0
+goto_if_false @BUS_48329
+goto @BUS_48420
+
+:BUS_48420
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2122.3201 994.953 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2122.3201 994.953 radius 3.0 3.0
+goto_if_false @BUS_48420
+goto @BUS_48511
+
+:BUS_48511
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2103.52 989.353 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2103.52 989.353 radius 3.0 3.0
+goto_if_false @BUS_48511
+goto @BUS_48602
+
+:BUS_48602
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2092.6201 999.553 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2092.6201 999.553 radius 3.0 3.0
+goto_if_false @BUS_48602
+goto @BUS_48693
+
+:BUS_48693
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2092.6201 1012.95 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2092.6201 1012.95 radius 3.0 3.0
+goto_if_false @BUS_48693
+goto @BUS_48784
+
+:BUS_48784
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2100.8201 1025.15 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2100.8201 1025.15 radius 3.0 3.0
+goto_if_false @BUS_48784
+goto @BUS_48875
+
+:BUS_48875
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2108.02 1031.35 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2108.02 1031.35 radius 3.0 3.0
+goto_if_false @BUS_48875
+goto @BUS_48966
+
+:BUS_48966
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2115.8201 1037.05 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2115.8201 1037.05 radius 3.0 3.0
+goto_if_false @BUS_48966
+goto @BUS_49057
+
+:BUS_49057
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2129.0901 1043.35 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2129.0901 1043.35 radius 3.0 3.0
+goto_if_false @BUS_49057
+goto @BUS_49148
+
+:BUS_49148
+wait 0
+set_car_cruise_speed 8@ max_speed_to 5.0
+car_wander_randomly 8@
+car_goto_coordinates_accurate 8@ drive_to 2139.093 1048.8521 11.0
+gosub @BUS_49589
+if 
+  locate_car_2d 8@ sphere 0 near_point 2139.093 1048.8521 radius 3.0 3.0
+goto_if_false @BUS_49148
+goto @BUS_3081
+
+:BUS_49239
+gosub @BUS_49589
+14@ += -30
+gosub @BUS_49262
+return 
+
+:BUS_49262
+wait 1
+if and
+  is_char_in_car $PLAYER_ACTOR in_car 8@
+  not locate_char_any_means_car_2d $PLAYER_ACTOR near_car 8@ radius 10.0 10.0 sphere 0
+  not is_button_pressed 0 pressed_key 11
+gosub_if_false @BUS_49313
+return 
+
+:BUS_49313
+task_enter_car_as_passenger $PLAYER_ACTOR enter_car 8@ passenger_seat -1 time -1
+open_car_door_a_bit 8@ door 3 rotation_to 1.0
+12@ = 1
+return 
+
+:BUS_49346
+if 
+  is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49392
+if 
+  12@ <> 0
+gosub_if_false @BUS_49421
+gosub @BUS_49401
+return 
+
+:BUS_49392
+12@ = 0
+return 
+
+:BUS_49401
+if 
+  12@ == 2
+gosub_if_false @BUS_49430
+return 
+
+:BUS_49421
+12@ = 2
+return 
+
+:BUS_49430
+12@ = 1
+return 
+
+:BUS_49439
+wait 0
+if 
+  12@ <> 1
+gosub_if_false @BUS_49463
+return 
+
+:BUS_49463
+print_help 'BUSFARE'
+add_score $PLAYER_CHAR money += -2
+12@ = 2
+wait 1000
+return 
+
+:BUS_49495
+task_go_straight_to_coord 9@ goto_point 2164.8899 1078.26 11.597 mode 4 time -1
+wait 10@
+task_enter_car_as_driver 9@ enter_car 8@ as_driver 20000
+wait 20000
+return 
+
+:BUS_49542
+task_go_straight_to_coord 9@ goto_point 1973.72 2474.6299 11.726 mode 4 time -1
+wait 10@
+task_enter_car_as_driver 9@ enter_car 8@ as_driver 20000
+wait 20000
+return 
+
+:BUS_49589
+if and
+  locate_char_any_means_car_2d $PLAYER_ACTOR near_car 8@ radius 250.0 250.0 sphere 0
+  not is_car_dead 8@
+goto_if_false @BUS_49643
+if 
+  not is_char_dead 9@
+goto_if_false @BUS_49928
+return 
+
+:BUS_49643
+delete_car 8@
+goto @BUS_37
+
+:BUS_49655
+print_help 'EXC'
+return 
+
+:BUS_49668
+print_help 'LUX'
+return 
+
+:BUS_49681
+print_help 'CRH'
+return 
+
+:BUS_49694
+print_help 'CAE'
+return 
+
+:BUS_49707
+print_help 'CIR'
+return 
+
+:BUS_49720
+print_help 'BAR'
+return 
+
+:BUS_49733
+print_help 'MER'
+return 
+
+:BUS_49746
+print_help 'FRE'
+return 
+
+:BUS_49759
+print_help 'LAP'
+return 
+
+:BUS_49772
+print_help 'LAD'
+return 
+
+:BUS_49785
+print_help 'DROP'
+return 
+
+:BUS_49798
+print_help 'TER_1'
+return 
+
+:BUS_49811
+print_help 'LVP'
+return 
+
+:BUS_49824
+print_help 'BGS'
+return 
+
+:BUS_49837
+print_help 'MEA'
+return 
+
+:BUS_49850
+print_help 'MIR'
+return 
+
+:BUS_49863
+print_help 'TRE'
+return 
+
+:BUS_49876
+print_help 'BAL'
+return 
+
+:BUS_49889
+print_help 'FLM'
+return 
+
+:BUS_49902
+print_help 'IMP'
+return 
+
+:BUS_49915
+print_help 'TER_2'
+return 
+
+:BUS_49928
+task_leave_car $PLAYER_ACTOR exit_car 8@
+return 
+if 
+  not is_char_in_car $PLAYER_ACTOR in_car 8@
+gosub_if_false @BUS_49928
+mark_car_as_no_longer_needed 8@
+goto @BUS_37
