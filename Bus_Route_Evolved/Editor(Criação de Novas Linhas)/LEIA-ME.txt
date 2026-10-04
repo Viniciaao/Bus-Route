@@ -1,0 +1,46 @@
+EDITOR DE LINHAS - BUS ROUTE EVOLVED
+====================================
+
+O QUE E
+-------
+Um editor que roda no proprio navegador (nao precisa instalar nada) para montar
+uma linha de onibus e transformar ela em um script de CLEO (.cs) para o GTA San
+Andreas. E o jeito mais facil de criar linhas novas sem escrever codigo.
+
+COMO ABRIR
+----------
+Clique duas vezes em "editor_de_linhas.html" (Chrome, Edge ou Firefox).
+Funciona offline. O rascunho fica salvo no proprio navegador.
+
+PASSO A PASSO
+-------------
+1. Preencha as configuracoes da linha (nome, tarifa, modelos do onibus, tempos).
+2. Adicione as paradas. Para cada parada informe:
+     - o ponto de espera (X, Y, Z) - onde o jogador aguarda o onibus;
+     - a direcao (graus) em que o onibus nasce naquela parada;
+     - o texto da parada (uma etiqueta de ate 7 letras que o onibus anuncia);
+     - os pontos do trajeto da parada ANTERIOR ate esta (o caminho do onibus).
+3. Use "Baixar JSON" / "Copiar JSON" e envie o arquivo ao assistente, OU clique em
+   "Gerar gta3script (.sc)" para obter o codigo-fonte na hora.
+4. Compile o .sc com o gta3sc:
+
+     gta3sc compile BUS301.sc --config=gtasa --guesser --cs -o BUS301.cs
+
+   (ou rode "tools/build.sh" na pasta Bus_Route_Evolved com o JSON em data/routes/)
+
+5. Copie o .cs para GTA San Andreas/CLEO/ e os textos novos para
+   GTA San Andreas/CLEO/cleo_text/ (um arquivo .fxt).
+
+EXEMPLO
+-------
+"exemplos/301_route.json" e a linha 301 completa (do mod original). Use
+"Importar JSON" para abri-la no editor e ver como tudo foi preenchido.
+
+DICAS
+-----
+- 0 graus = norte, 90 = oeste, 180 = sul, 270 = leste (igual ao GTA).
+- O ultimo ponto do trajeto deve ficar em cima do ponto de espera da parada.
+- Coloque um ponto de trajeto a cada curva; velocidades 5 (manobra), 10 (rua),
+  15 (avenida) funcionam bem.
+- Z = 11.0 e o nivel da rua em Las Venturas.
+- Textos usados: veja ../CLEO/cleo_text/Bus_PTBR.fxt como modelo.

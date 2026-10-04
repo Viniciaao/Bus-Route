@@ -1,0 +1,33 @@
+; Bus Route Evolved - textos (GXT) da rota 301
+; Compativel com o mod original (Bus Route, de Sinan) - mesmas etiquetas.
+; Instale em: GTA San Andreas/CLEO/cleo_text/Bus_PTBR.fxt
+; Codificacao: ASCII (o GXT do jogo nao aceita acentos fora do cp1252)
+; BUS ROUTE STRING FILE
+; This file contains all the texts used by mod.
+
+ON_BUS Quando o onibus parar no ponto, aperte ~h~ 'Y' ~w~ para entrar. A passagem custara $2.
+BUSFARE Tarifa cobrada: $2
+DEUCE O onibus esta disponivel por $2. Por que nao vem a Las Venturas para ter uma viagem ao longo dela?
+BUS_T1 Voce pode esperar o onibus por volta de Downtown Las Vegas.
+BUS_T2 Voce pode esperar o onibus por volta de South Strip Transfer Terminal.
+EXC A proxima parada eh Excalibur Hotel e Casino.
+LUX A proxima parada eh The Luxor Hotel.
+CRH A proxima parada eh Casino Royale & Hotel.
+CAE A proxima parada eh Caesaes Palace.
+CIR A proxima parada eh Circus Circus.
+BAR A proxima parada eh Barbary Coast Hotel e Casino.
+MER A proxima parada eh California Hotel e Casino.
+FRE A proxima parada eh Fremont Hotel e Casino.
+LAP A proxima parada eh Las Vegas Metapolitician Police Department.
+LAD A proxima parada eh Lady Luck Hotel & Casino.
+DROP A proxima parada eh Downtown Transportation Center drop off station.
+TER_1 A proxima parada eh Downtown Transportation Center. Obrigado por viajar na rota 301.
+LVP A proxima parada eh Las Vegas Premium Outlets.
+BGS A proxima parada eh Bonanza Gift Shop.
+MEA A proxima parada eh Meadows Mall.
+MIR A proxima parada eh The Mirage.
+TRE A proxima parada eh Treasure Isle Hotel e Casino.
+BAL A proxima parada eh Bally's Las Vegas.
+FLM A proxima parada eh Flamingo Las Vegas.
+IMP A proxima parada eh Imperial Palace Hotel e Casino.
+TER_2 A proxima parada eh South Strip Transfer Terminal. Obrigado por viajar na rota 301.

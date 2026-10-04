@@ -1,0 +1,1211 @@
+{
+  "schemaVersion": 1,
+  "id": "301",
+  "name": "Rota 301 - The Deuce (Las Venturas Strip)",
+  "description": "Rota circular original do mod Bus Route (Sinan): South Strip Transfer Terminal -> Downtown Transportation Center -> volta pela Strip Sul.",
+  "settings": {
+    "fare": 2,
+    "stopRadius": 20.0,
+    "boardRadius": 10.0,
+    "abandonDistance": 250.0,
+    "dwellTime": 8000,
+    "dwellTimeMin": 5000,
+    "dwellTimeMax": 10000,
+    "layoverTime": 30000,
+    "layoverTimeMin": 25000,
+    "layoverTimeMax": 40000,
+    "vehicleModels": [
+      431,
+      437
+    ],
+    "driverModel": 7,
+    "colours": [
+      1,
+      1
+    ],
+    "blip": true
+  },
+  "stops": [
+    {
+      "index": 1,
+      "sourceLabel": "BUS_37",
+      "x": 2139.093,
+      "y": 1048.8521,
+      "z": 11.0,
+      "spawnHeading": 300,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T1",
+      "terminal": true,
+      "layover": {
+        "driverBreak": true,
+        "sub": "BUS_49495",
+        "x": 2164.8899,
+        "y": 1078.26,
+        "z": 11.597
+      },
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "EXC",
+      "leg": {
+        "from": 21,
+        "to": 1,
+        "waypoints": [
+          {
+            "x": 2162.4199,
+            "y": 975.553,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          },
+          {
+            "x": 2167.1201,
+            "y": 983.953,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2162.3201,
+            "y": 992.353,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2142.3201,
+            "y": 994.953,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2122.3201,
+            "y": 994.953,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2103.52,
+            "y": 989.353,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2092.6201,
+            "y": 999.553,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2092.6201,
+            "y": 1012.95,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2100.8201,
+            "y": 1025.15,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2108.02,
+            "y": 1031.35,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2115.8201,
+            "y": 1037.05,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2129.0901,
+            "y": 1043.35,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2139.093,
+            "y": 1048.8521,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "TER_2"
+    },
+    {
+      "index": 2,
+      "sourceLabel": "BUS_143",
+      "x": 2075.05,
+      "y": 1178.6,
+      "z": 11.0,
+      "spawnHeading": 0,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T1",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "LUX",
+      "leg": {
+        "from": 1,
+        "to": 2,
+        "waypoints": [
+          {
+            "x": 2147.6931,
+            "y": 1053.489,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2153.6521,
+            "y": 1053.3669,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2158.2471,
+            "y": 1051.48,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2160.05,
+            "y": 1041.5,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2155.6499,
+            "y": 1021.5,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2155.6499,
+            "y": 1007.6,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2165.3501,
+            "y": 995.6,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2072.05,
+            "y": 1158.6,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          },
+          {
+            "x": 2075.05,
+            "y": 1178.6,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "EXC"
+    },
+    {
+      "index": 3,
+      "sourceLabel": "BUS_249",
+      "x": 2075.05,
+      "y": 1355.35,
+      "z": 11.0,
+      "spawnHeading": 0,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T1",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "CRH",
+      "leg": {
+        "from": 2,
+        "to": 3,
+        "waypoints": [
+          {
+            "x": 2072.05,
+            "y": 1335.35,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2075.05,
+            "y": 1355.35,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "LUX"
+    },
+    {
+      "index": 4,
+      "sourceLabel": "BUS_355",
+      "x": 2075.05,
+      "y": 1514.85,
+      "z": 11.0,
+      "spawnHeading": 0,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T1",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "CAE",
+      "leg": {
+        "from": 3,
+        "to": 4,
+        "waypoints": [
+          {
+            "x": 2072.05,
+            "y": 1494.85,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2075.05,
+            "y": 1514.85,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "CRH"
+    },
+    {
+      "index": 5,
+      "sourceLabel": "BUS_461",
+      "x": 2075.05,
+      "y": 1661.95,
+      "z": 11.0,
+      "spawnHeading": 0,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T1",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "CIR",
+      "leg": {
+        "from": 4,
+        "to": 5,
+        "waypoints": [
+          {
+            "x": 2072.05,
+            "y": 1641.95,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2075.05,
+            "y": 1661.95,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "CAE"
+    },
+    {
+      "index": 6,
+      "sourceLabel": "BUS_567",
+      "x": 2152.96,
+      "y": 1863.55,
+      "z": 11.0,
+      "spawnHeading": 333,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T1",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "BAR",
+      "leg": {
+        "from": 5,
+        "to": 6,
+        "waypoints": [
+          {
+            "x": 2144.3601,
+            "y": 1850.15,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2152.96,
+            "y": 1863.55,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "CIR"
+    },
+    {
+      "index": 7,
+      "sourceLabel": "BUS_673",
+      "x": 2154.76,
+      "y": 1994.45,
+      "z": 11.0,
+      "spawnHeading": 0,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T1",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "MER",
+      "leg": {
+        "from": 6,
+        "to": 7,
+        "waypoints": [
+          {
+            "x": 2151.76,
+            "y": 1974.45,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2154.76,
+            "y": 1994.45,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "BAR"
+    },
+    {
+      "index": 8,
+      "sourceLabel": "BUS_779",
+      "x": 2154.76,
+      "y": 2113.25,
+      "z": 11.0,
+      "spawnHeading": 0,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T1",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "FRE",
+      "leg": {
+        "from": 7,
+        "to": 8,
+        "waypoints": [
+          {
+            "x": 2153.6599,
+            "y": 2083.25,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2154.76,
+            "y": 2093.25,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2154.76,
+            "y": 2113.25,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "MER"
+    },
+    {
+      "index": 9,
+      "sourceLabel": "BUS_885",
+      "x": 2154.76,
+      "y": 2191.95,
+      "z": 11.0,
+      "spawnHeading": 0,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T1",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "LAP",
+      "leg": {
+        "from": 8,
+        "to": 9,
+        "waypoints": [
+          {
+            "x": 2149.1599,
+            "y": 2161.95,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2154.76,
+            "y": 2171.95,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          },
+          {
+            "x": 2154.76,
+            "y": 2191.95,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "FRE"
+    },
+    {
+      "index": 10,
+      "sourceLabel": "BUS_991",
+      "x": 2228.8601,
+      "y": 2393.55,
+      "z": 11.0,
+      "spawnHeading": 356,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T1",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "LAD",
+      "leg": {
+        "from": 9,
+        "to": 10,
+        "waypoints": [
+          {
+            "x": 2225.1599,
+            "y": 2377.6499,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2228.3601,
+            "y": 2389.95,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2228.8601,
+            "y": 2393.55,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "LAP"
+    },
+    {
+      "index": 11,
+      "sourceLabel": "BUS_1097",
+      "x": 2087.26,
+      "y": 2455.55,
+      "z": 11.0,
+      "spawnHeading": 90,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T1",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "DROP",
+      "leg": {
+        "from": 10,
+        "to": 11,
+        "waypoints": [
+          {
+            "x": 2087.26,
+            "y": 2455.55,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "LAD"
+    },
+    {
+      "index": 12,
+      "sourceLabel": "BUS_1203",
+      "x": 1997.36,
+      "y": 2395.75,
+      "z": 11.0,
+      "spawnHeading": 90,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T1",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "TER_1",
+      "leg": {
+        "from": 11,
+        "to": 12,
+        "waypoints": [
+          {
+            "x": 2007.36,
+            "y": 2395.75,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 1997.36,
+            "y": 2395.75,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "DROP"
+    },
+    {
+      "index": 13,
+      "sourceLabel": "BUS_1309",
+      "x": 1997.468,
+      "y": 2471.4719,
+      "z": 11.0,
+      "spawnHeading": 0,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T2",
+      "terminal": true,
+      "layover": {
+        "driverBreak": true,
+        "sub": "BUS_49542",
+        "x": 1973.72,
+        "y": 2474.6299,
+        "z": 11.726
+      },
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "LVP",
+      "leg": {
+        "from": 12,
+        "to": 13,
+        "waypoints": [
+          {
+            "x": 1957.36,
+            "y": 2395.75,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          },
+          {
+            "x": 1964.42,
+            "y": 2416.02,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 1987.42,
+            "y": 2414.6279,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 1991.642,
+            "y": 2434.7051,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 1993.5811,
+            "y": 2449.967,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 1996.47,
+            "y": 2460.47,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 1997.468,
+            "y": 2471.4719,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "TER_1"
+    },
+    {
+      "index": 14,
+      "sourceLabel": "BUS_1415",
+      "x": 2055.3601,
+      "y": 2322.95,
+      "z": 11.0,
+      "spawnHeading": 307,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T2",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "BGS",
+      "leg": {
+        "from": 13,
+        "to": 14,
+        "waypoints": [
+          {
+            "x": 1997.03,
+            "y": 2481.6201,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 1986.73,
+            "y": 2484.9199,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 1983.12,
+            "y": 2468.0601,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 1983.12,
+            "y": 2453.8899,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 1983.12,
+            "y": 2440.1899,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 1969.3199,
+            "y": 2432.5481,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 1958.37,
+            "y": 2432.5481,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 1947.42,
+            "y": 2432.5481,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 1943.96,
+            "y": 2410.324,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 1948.76,
+            "y": 2400.3201,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 1963.96,
+            "y": 2391.02,
+            "z": 11,
+            "speed": 5,
+            "radius": 3
+          },
+          {
+            "x": 2041.0601,
+            "y": 2336.75,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          },
+          {
+            "x": 2048.76,
+            "y": 2328.75,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          },
+          {
+            "x": 2055.3601,
+            "y": 2322.95,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "LVP"
+    },
+    {
+      "index": 15,
+      "sourceLabel": "BUS_1521",
+      "x": 2119.76,
+      "y": 2178.3501,
+      "z": 11.0,
+      "spawnHeading": 180,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T2",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "MEA",
+      "leg": {
+        "from": 14,
+        "to": 15,
+        "waypoints": [
+          {
+            "x": 2122.26,
+            "y": 2198.3501,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2119.76,
+            "y": 2188.3501,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          },
+          {
+            "x": 2119.76,
+            "y": 2178.3501,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "BGS"
+    },
+    {
+      "index": 16,
+      "sourceLabel": "BUS_1627",
+      "x": 2119.76,
+      "y": 2063.75,
+      "z": 11.0,
+      "spawnHeading": 180,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T2",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "MIR",
+      "leg": {
+        "from": 15,
+        "to": 16,
+        "waypoints": [
+          {
+            "x": 2122.26,
+            "y": 2083.75,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2119.76,
+            "y": 2073.75,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          },
+          {
+            "x": 2119.76,
+            "y": 2063.75,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "MEA"
+    },
+    {
+      "index": 17,
+      "sourceLabel": "BUS_1733",
+      "x": 2119.76,
+      "y": 1882.65,
+      "z": 11.0,
+      "spawnHeading": 180,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T2",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "TRE",
+      "leg": {
+        "from": 16,
+        "to": 17,
+        "waypoints": [
+          {
+            "x": 2122.26,
+            "y": 1902.65,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2119.76,
+            "y": 1892.65,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          },
+          {
+            "x": 2119.76,
+            "y": 1882.65,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "MIR"
+    },
+    {
+      "index": 18,
+      "sourceLabel": "BUS_1839",
+      "x": 2039.75,
+      "y": 1545,
+      "z": 11.0,
+      "spawnHeading": 180,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T2",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "BAL",
+      "leg": {
+        "from": 17,
+        "to": 18,
+        "waypoints": [
+          {
+            "x": 2041.75,
+            "y": 1565,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2039.75,
+            "y": 1555,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          },
+          {
+            "x": 2039.75,
+            "y": 1545,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "TRE"
+    },
+    {
+      "index": 19,
+      "sourceLabel": "BUS_1945",
+      "x": 2039.75,
+      "y": 1346.75,
+      "z": 11.0,
+      "spawnHeading": 180,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T2",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "FLM",
+      "leg": {
+        "from": 18,
+        "to": 19,
+        "waypoints": [
+          {
+            "x": 2041.75,
+            "y": 1366.75,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2039.75,
+            "y": 1356.75,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          },
+          {
+            "x": 2039.75,
+            "y": 1346.75,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "BAL"
+    },
+    {
+      "index": 20,
+      "sourceLabel": "BUS_2051",
+      "x": 2039.75,
+      "y": 1145,
+      "z": 11.0,
+      "spawnHeading": 180,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T2",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "IMP",
+      "leg": {
+        "from": 19,
+        "to": 20,
+        "waypoints": [
+          {
+            "x": 2041.75,
+            "y": 1165,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2039.75,
+            "y": 1155,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          },
+          {
+            "x": 2039.75,
+            "y": 1145,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "FLM"
+    },
+    {
+      "index": 21,
+      "sourceLabel": "BUS_2157",
+      "x": 2039.75,
+      "y": 1005.35,
+      "z": 11.0,
+      "spawnHeading": 180,
+      "waitHint": "ON_BUS",
+      "waitText": "BUS_T2",
+      "terminal": false,
+      "layover": null,
+      "doorsBoard": [
+        4,
+        5
+      ],
+      "doorsExit": [
+        3
+      ],
+      "announceNextLabel": "TER_2",
+      "leg": {
+        "from": 20,
+        "to": 21,
+        "waypoints": [
+          {
+            "x": 2041.75,
+            "y": 1025.35,
+            "z": 11,
+            "speed": 15,
+            "radius": 3
+          },
+          {
+            "x": 2039.75,
+            "y": 1015.35,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          },
+          {
+            "x": 2039.75,
+            "y": 1005.35,
+            "z": 11,
+            "speed": 10,
+            "radius": 3
+          }
+        ]
+      },
+      "textLabel": "IMP"
+    }
+  ]
+}

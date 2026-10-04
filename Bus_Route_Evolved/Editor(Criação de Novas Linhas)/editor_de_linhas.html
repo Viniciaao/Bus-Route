@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bus Route Evolved — Editor de Linhas</title>
+<style>
+  :root{
+    --bg:#101418; --painel:#171d24; --painel2:#1e262f; --borda:#2c3742;
+    --texto:#e6edf3; --fraco:#93a1b0; --acento:#ffb703; --acento2:#2a9d8f; --perigo:#e76f51;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--texto);font:15px/1.45 system-ui,Segoe UI,Roboto,sans-serif}
+  header{padding:18px 22px;background:linear-gradient(135deg,#1b2430,#101418);border-bottom:1px solid var(--borda);position:sticky;top:0;z-index:5}
+  h1{margin:0 0 4px;font-size:20px}
+  h2{font-size:16px;margin:0 0 10px;color:var(--acento)}
+  h3{font-size:14px;margin:14px 0 6px;color:var(--acento2);text-transform:uppercase;letter-spacing:.04em}
+  header p{margin:0;color:var(--fraco);font-size:13px}
+  .barra{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  button,.btn{background:var(--painel2);color:var(--texto);border:1px solid var(--borda);
+    border-radius:8px;padding:8px 12px;font-size:13px;cursor:pointer}
+  button:hover,.btn:hover{border-color:var(--acento);color:var(--acento)}
+  button.principal{background:var(--acento);border-color:var(--acento);color:#1a1206;font-weight:600}
+  button.principal:hover{filter:brightness(1.08);color:#1a1206}
+  button.perigo:hover{border-color:var(--perigo);color:var(--perigo)}
+  main{display:grid;grid-template-columns:minmax(280px,340px) 1fr;gap:18px;padding:18px;align-items:start}
+  @media(max-width:900px){main{grid-template-columns:1fr}}
+  section{background:var(--painel);border:1px solid var(--borda);border-radius:12px;padding:16px}
+  label{display:block;font-size:12px;color:var(--fraco);margin:8px 0 3px}
+  input,select,textarea{width:100%;background:#0d1216;color:var(--texto);border:1px solid var(--borda);
+    border-radius:7px;padding:7px 9px;font:13px/1.35 ui-monospace,Consolas,monospace}
+  input[type=checkbox]{width:auto}
+  .linha{display:flex;gap:8px}
+  .linha>div{flex:1}
+  .grade4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+  .cartao{background:var(--painel2);border:1px solid var(--borda);border-radius:10px;padding:12px;margin-bottom:12px}
+  .cartao.cabeca{display:flex;align-items:center;gap:10px;justify-content:space-between}
+  .cartao .num{background:var(--acento);color:#1a1206;font-weight:700;border-radius:6px;padding:2px 8px;font-size:13px}
+  .cartao .mini{font-size:12px;color:var(--fraco)}
+  table{width:100%;border-collapse:collapse;margin-top:6px}
+  th,td{border-bottom:1px solid var(--borda);padding:4px 6px;text-align:left;font-size:12px;color:var(--fraco)}
+  th{color:var(--acento2);font-weight:600}
+  td input{padding:4px 6px;font-size:12px}
+  dialog{background:var(--painel);color:var(--texto);border:1px solid var(--borda);border-radius:12px;max-width:920px;width:92%}
+  dialog textarea{height:52vh;white-space:pre;font-size:12px}
+  .aviso{background:#241a10;border:1px solid #6b4b12;color:#ffd08a;border-radius:8px;padding:9px 11px;font-size:13px;margin:10px 0}
+  .ok{background:#10231d;border-color:#1d5a49;color:#9defd4}
+  code{background:#0d1216;border:1px solid var(--borda);border-radius:5px;padding:1px 5px;font-size:12px}
+  .ajuda{font-size:13px;color:var(--fraco)}
+  .ajuda li{margin:4px 0}
+  details{margin-top:10px}
+  summary{cursor:pointer;color:var(--acento2)}
+</style>
+</head>
+<body>
+<header>
+  <h1>🚌 Bus Route Evolved — Editor de Linhas</h1>
+  <p>Monte uma linha de ônibus, exporte o JSON (para pedir o script ao assistente) ou gere o gta3script direto.</p>
+  <div class="barra">
+    <button id="bNovo">Nova linha</button>
+    <button id="bExemplo">Carregar exemplo</button>
+    <label class="btn">Importar JSON<input type="file" id="fJson" accept=".json,application/json" hidden></label>
+    <button id="bBaixarJson">Baixar JSON</button>
+    <button id="bCopiarJson">Copiar JSON</button>
+    <button class="principal" id="bGerar">Gerar gta3script (.sc)</button>
+    <span id="status" class="mini"></span>
+  </div>
+</header>
+
+<main>
+  <div>
+    <section>
+      <h2>Configurações da linha</h2>
+      <div class="linha">
+        <div><label>Número/id</label><input id="cId" value="301"></div>
+        <div><label>Tarifa ($)</label><input id="cTarifa" type="number" value="2" min="0" step="1"></div>
+      </div>
+      <label>Nome da linha</label><input id="cNome" value="Rota 301 - The Deuce">
+      <label>Descrição (opcional)</label><textarea id="cDesc" rows="2"></textarea>
+      <h3>Ônibus e motorista</h3>
+      <div class="linha">
+        <div><label>Modelo A</label><input id="cModA" type="number" value="431"></div>
+        <div><label>Modelo B</label><input id="cModB" type="number" value="437"></div>
+      </div>
+      <div class="linha">
+        <div><label>Modelo do motorista</label><input id="cMotorista" type="number" value="7"></div>
+        <div><label>Cor (1-126)</label><input id="cCor" type="number" value="1" min="1" max="126"></div>
+      </div>
+      <label><input type="checkbox" id="cBlip" checked> Marcar o ônibus no mapa (blip)</label>
+
+      <h3>Distâncias</h3>
+      <div class="grade4">
+        <div><label>Raio do ponto</label><input id="cRaioPonto" type="number" step="0.5" value="20"></div>
+        <div><label>Raio embarque</label><input id="cRaioEmb" type="number" step="0.5" value="10"></div>
+        <div><label>Raio chegada</label><input id="cRaioCheg" type="number" step="0.5" value="3"></div>
+        <div><label>Abandono</label><input id="cAbandono" type="number" step="10" value="250"></div>
+      </div>
+
+      <h3>Tempos (ms)</h3>
+      <div class="linha">
+        <div><label>Parada mín.</label><input id="cEsperaMin" type="number" step="500" value="5000"></div>
+        <div><label>Parada máx.</label><input id="cEsperaMax" type="number" step="500" value="10000"></div>
+      </div>
+      <div class="linha">
+        <div><label>Descanso mín.</label><input id="cPausaMin" type="number" step="1000" value="25000"></div>
+        <div><label>Descanso máx.</label><input id="cPausaMax" type="number" step="1000" value="40000"></div>
+      </div>
+      <div id="cfgStatus" class="aviso" style="display:none"></div>
+    </section>
+
+    <section style="margin-top:14px">
+      <h2>Como usar</h2>
+      <ol class="ajuda">
+        <li>Preencha as configurações e as paradas (a ordem das paradas é o sentido da linha).</li>
+        <li>Cada parada tem um <b>ponto de espera</b> (onde o jogador aguarda) e a <b>direção</b> do ônibus quando ele nasce ali.</li>
+        <li>Os <b>pontos do trajeto</b> são o caminho que o ônibus percorre da parada anterior até esta.</li>
+        <li>Clique em <b>Baixar/Copiar JSON</b> e envie o arquivo ao assistente, ou clique em <b>Gerar gta3script</b>.</li>
+        <li>Compile o <code>.sc</code> com o <code>gta3sc</code> (<code>compile ARQUIVO.sc --config=gtasa --guesser --cs -o BUSxxx.cs</code>) e instale o <code>.cs</code> em <code>GTA San Andreas/CLEO/</code>.</li>
+      </ol>
+      <details>
+        <summary>Como conseguir as coordenadas no jogo</summary>
+        <ul class="ajuda">
+          <li>Use um mod/trainer que mostre as coordenadas (ou o <i>debug</i> do Sanny Builder com o jogo em janela).</li>
+          <li>Anote <b>X</b>, <b>Y</b> e <b>Z</b> (Z ≈ 11.0 é o nível da rua em Las Venturas) e o <b>ângulo</b> (0 = norte, 90 = oeste, 180 = sul, 270 = leste, como no GTA).</li>
+          <li>Para o trajeto, ande com o ônibus pelo caminho e anote alguns pontos (um a cada esquina já resolve).</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Dicas de bom trajeto</summary>
+        <ul class="ajuda">
+          <li>Coloque um ponto de trajeto em cada curva — o jogo só sabe ir em linha reta entre dois pontos.</li>
+          <li>Use pontos espaçados (~20 a 60 unidades) e velocidades 5 (manobra), 10 (rua) e 15 (avenida).</li>
+          <li>O último ponto do trajeto de uma parada deve ficar <b>no ponto de espera</b> dela (é onde o ônibus para).</li>
+        </ul>
+      </details>
+    </section>
+  </div>
+
+  <div>
+    <section>
+      <h2>Paradas <span class="mini" id="contParadas"></span></h2>
+      <div id="listaParadas"></div>
+      <button id="bAddParada">+ Adicionar parada</button>
+      <button id="bAddSequencia" title="Adiciona uma parada com 3 pontos de trajeto já prontos">+ Parada com trajeto padrão</button>
+    </section>
+  </div>
+</main>
+
+<dialog id="dlgSaida">
+  <h2 id="dlgTitulo">Saída</h2>
+  <div class="barra">
+    <button class="principal" id="bCopiarSaida">Copiar</button>
+    <button id="bBaixarSaida">Baixar arquivo</button>
+    <button id="bFechar">Fechar</button>
+  </div>
+  <p class="mini" id="dlgDica"></p>
+  <textarea id="saida" spellcheck="false"></textarea>
+</dialog>
+
+<script>
+"use strict";
+/* ==========================================================================
+   Bus Route Evolved - Editor de Linhas
+   --------------------------------------------------------------------------
+   Modelo de dados (mesmo formato de data/routes/*.json, "schemaVersion": 1):
+
+     { id, name, description,
+       settings: { fare, stopRadius, boardRadius, arriveRadius, abandonDistance,
+                   dwellTime, dwellTimeMin, dwellTimeMax,
+                   layoverTime, layoverTimeMin, layoverTimeMax,
+                   vehicleModels:[a,b], driverModel, colours:[a,b], blip },
+       stops: [ { index, textLabel, waitText, x, y, z, spawnHeading, terminal,
+                  doorsBoard:[4,5], doorsExit:[3], layover:{x,y,z}|null,
+                  leg:{from,to,waypoints:[{x,y,z,speed,radius}]} } ] }
+
+   O gerador de gta3script aqui e o mesmo de tools/generate_script.py:
+   mantenha os dois em sincronia se mudar o formato.
+   ========================================================================== */
+
+const NORMAIS = [4, 5];   // portas traseiras (embarque de passageiros)
+const SAIDA   = [3];      // porta dianteira direita
+
+function paradaVazia(i, anterior){
+  const a = anterior || {x:0, y:0, z:11, spawnHeading:0};
+  const x = a.x, y = a.y;
+  return {
+    index: i,
+    textLabel: "PARADA" + i,
+    waitText: "BUS_T1",
+    x: x, y: y, z: 11.0,
+    spawnHeading: a.spawnHeading || 0,
+    terminal: false,
+    doorsBoard: NORMAIS.slice(),
+    doorsExit: SAIDA.slice(),
+    layover: null,
+    leg: {
+      from: Math.max(1, i - 1),
+      to: i,
+      waypoints: [
+        {x: a.x, y: a.y, z: 11, speed: 15, radius: 3},
+        {x: Math.round((a.x + x) / 2), y: Math.round((a.y + y) / 2), z: 11, speed: 10, radius: 3},
+        {x: x, y: y, z: 11, speed: 5, radius: 3}
+      ]
+    }
+  };
+}
+
+function linhaNova(){
+  return {
+    schemaVersion: 1,
+    id: "302",
+    name: "Rota 302 - Nova Linha",
+    description: "",
+    settings: {
+      fare: 2, stopRadius: 20.0, boardRadius: 10.0, arriveRadius: 3.0, abandonDistance: 250.0,
+      dwellTime: 8000, dwellTimeMin: 5000, dwellTimeMax: 10000,
+      layoverTime: 30000, layoverTimeMin: 25000, layoverTimeMax: 40000,
+      vehicleModels: [431, 437], driverModel: 7, colours: [1, 1], blip: true
+    },
+    stops: [paradaVazia(1, null), paradaVazia(2, {x:100, y:-50, z:11, spawnHeading:180})]
+  };
+}
+
+function exemplo(){
+  const l = linhaNova();
+  l.id = "301";
+  l.name = "Rota 301 - The Deuce (exemplo)";
+  l.description = "Exemplo curto mostrando o formato. A rota completa esta em data/routes/301_route.json.";
+  l.stops = [
+    {index:1, textLabel:"TER_1", waitText:"BUS_T1", x:2139.093, y:1048.8521, z:11.0, spawnHeading:300,
+     terminal:true, doorsBoard:NORMAIS.slice(), doorsExit:SAIDA.slice(),
+     layover:{x:2164.8899, y:1078.26, z:11.597},
+     leg:{from:2, to:1, waypoints:[
+       {x:2100.0, y:1000.0, z:11, speed:10, radius:3},
+       {x:2139.093, y:1048.8521, z:11, speed:5, radius:3}]}},
+    {index:2, textLabel:"EXC", waitText:"BUS_T1", x:2075.05, y:1178.6, z:11.0, spawnHeading:0,
+     terminal:false, doorsBoard:NORMAIS.slice(), doorsExit:SAIDA.slice(), layover:null,
+     leg:{from:1, to:2, waypoints:[
+       {x:2147.6931, y:1053.489, z:11, speed:5, radius:3},
+       {x:2072.05, y:1158.6, z:11, speed:10, radius:3},
+       {x:2075.05, y:1178.6, z:11, speed:15, radius:3}]}}
+  ];
+  return l;
+}
+
+const DOOR_NAMES = {0:"BONNET",1:"BOOT",2:"FRONT_LEFT_DOOR",3:"FRONT_RIGHT_DOOR",
+                    4:"REAR_LEFT_DOOR",5:"REAR_RIGHT_DOOR",6:"EXTRA_DOOR"};
+
+function num(v){
+  v = Number(v) || 0;
+  if (Number.isInteger(v)) return v.toFixed(1);
+  return String(v);
+}
+function sanitize(nome){
+  return String(nome).toUpperCase().replace(/[^A-Z0-9]+/g, "_").replace(/^_+|_+$/g, "");
+}
+function porta(nome, i){ return DOOR_NAMES[i] || String(i); }
+
+/* ------------------------------------------------------------------ gerador */
+function gerarScript(rota, opcoes){
+  opcoes = opcoes || {};
+  const st = rota.settings || {};
+  const paradas = rota.stops;
+  const scriptName = sanitize(opcoes.nome || ("BUS" + (rota.id || "000")));
+  const L = [];
+  const w = s => L.push(s === undefined ? "" : s);
+  const modeloA = (st.vehicleModels || [431,437])[0];
+  const modeloB = (st.vehicleModels || [431,437])[(st.vehicleModels || [431,437]).length-1];
+  const cor = st.colours || [1,1];
+
+  // portas usadas por qualquer parada
+  const portas = [];
+  paradas.forEach(p => (p.doorsBoard||NORMAIS).concat(p.doorsExit||SAIDA)
+      .forEach(d => { if (portas.indexOf(d) < 0) portas.push(d); }));
+  portas.sort((a,b)=>a-b);
+
+  w("// Compilar com: gta3sc compile " + scriptName + ".sc --config=gtasa --guesser --cs -o " + scriptName + ".cs");
+  w("// (o SCRIPT_NAME do .cs vem do nome do arquivo .sc, em maiusculas)");
+  w("// ------------------------------------------------------------------");
+  w("//  Bus Route Evolved - Rota " + (rota.id || "?") + " - " + (rota.name || ""));
+  w("//  Arquivo GERADO AUTOMATICAMENTE pelo editor de linhas.");
+  w("//  Dados de origem: editor de linhas (JSON da rota).");
+  w("//  Nao edite este arquivo a mao: altere a rota no editor e gere de novo.");
+  w("//");
+  w("//  Fluxo:");
+  w("//    1. o script espera o jogador chegar em um dos pontos;");
+  w("//    2. o onibus nasce na parada ANTERIOR (como no mod original) e");
+  w("//       percorre o trecho ate a parada do jogador;");
+  w("//    3. durante a parada as portas abrem, o jogador aperta Y para");
+  w("//       embarcar e a passagem e cobrada;");
+  w("//    4. o onibus segue a rota inteira, em ciclo, ate o jogador se");
+  w("//       afastar demais (ai a viagem e encerrada e tudo recomeca).");
+  w("// ------------------------------------------------------------------");
+  w("");
+  w("// --- configuracao (vem de settings no JSON da rota) ---");
+  w("CONST_INT   MODELO_ONIBUS_A    " + Number(modeloA));
+  w("CONST_INT   MODELO_ONIBUS_B    " + Number(modeloB));
+  w("CONST_INT   MODELO_MOTORISTA   " + Number(st.driverModel === undefined ? 7 : st.driverModel));
+  w("// valor da passagem (cobrado como desconto no dinheiro do jogador)");
+  w("CONST_INT   PASSAGEM_DESCONTO  " + (-1 * Number(st.fare === undefined ? 2 : st.fare)));
+  w("CONST_INT   ESPERA_MIN         " + Number(st.dwellTimeMin === undefined ? 5000 : st.dwellTimeMin));
+  w("CONST_INT   ESPERA_MAX         " + Number(st.dwellTimeMax === undefined ? 10000 : st.dwellTimeMax));
+  w("CONST_INT   PAUSA_MIN          " + Number(st.layoverTimeMin === undefined ? 25000 : st.layoverTimeMin));
+  w("CONST_INT   PAUSA_MAX          " + Number(st.layoverTimeMax === undefined ? 40000 : st.layoverTimeMax));
+  w("CONST_INT   TEMPO_MOTORISTA    20000");
+  w("CONST_FLOAT ALTURA_NASCIMENTO  10.5");
+  w("CONST_FLOAT CFG_RAIO_PONTO      " + num(st.stopRadius === undefined ? 20.0 : st.stopRadius));
+  w("CONST_FLOAT CFG_RAIO_EMBARQUE   " + num(st.boardRadius === undefined ? 10.0 : st.boardRadius));
+  w("CONST_FLOAT CFG_RAIO_CHEGADA    " + num(st.arriveRadius === undefined ? 3.0 : st.arriveRadius));
+  w("CONST_FLOAT CFG_DIST_ABANDONO   " + num(st.abandonDistance === undefined ? 250.0 : st.abandonDistance));
+  w("CONST_FLOAT PASSO_PORTA        0.05");
+  w("CONST_INT   MS_PORTA           30");
+  w("CONST_INT   ESPERA_TIME_OUT    30000");
+  w("");
+  w("SCRIPT_START");
+  w("{");
+  w("    SCRIPT_NAME " + scriptName);
+  w("");
+  w("    // 32 variaveis locais e o limite de um script CLEO - usamos 24.");
+  w("    LVAR_INT   cara onibus motorista blip modelo sorteio");
+  w("    LVAR_INT   viagem_ativa embarque espera pausa perto timeout");
+  w("    LVAR_FLOAT tx ty tz veloc angulo");
+  w("    LVAR_FLOAT nasc_x nasc_y nasc_h");
+  w("    LVAR_FLOAT raio_espera raio_embarque raio_chegada dist_abandono");
+  w("");
+  w("    // ---- configuracao inicial ----");
+  w("    viagem_ativa = 0");
+  w("    embarque = 0");
+  w("    perto = 0");
+  w("    espera = 0");
+  w("    raio_espera = CFG_RAIO_PONTO");
+  w("    raio_embarque = CFG_RAIO_EMBARQUE");
+  w("    raio_chegada = CFG_RAIO_CHEGADA");
+  w("    dist_abandono = CFG_DIST_ABANDONO");
+  w("    GET_PLAYER_CHAR 0 cara");
+  w("");
+  w("    GOTO iniciar  // o fluxo principal comeca depois das sub-rotinas");
+  w("");
+  w("    // ==================================================================");
+  w("    //  SUB-ROTINAS COMPARTILHADAS");
+  w("    // ==================================================================");
+  w("");
+  w("    // Cria o onibus (modelo sorteado) e o motorista na parada anterior.");
+  w("    nascer_onibus:");
+  w("        GENERATE_RANDOM_INT_IN_RANGE 0 2 sorteio");
+  w("        IF sorteio = 0");
+  w("            modelo = MODELO_ONIBUS_A");
+  w("        ELSE");
+  w("            modelo = MODELO_ONIBUS_B");
+  w("        ENDIF");
+  w("        REQUEST_MODEL modelo");
+  w("        REQUEST_MODEL MODELO_MOTORISTA");
+  w("        LOAD_ALL_MODELS_NOW");
+  w("        WHILE NOT HAS_MODEL_LOADED modelo");
+  w("            WAIT 0");
+  w("        ENDWHILE");
+  w("        WHILE NOT HAS_MODEL_LOADED MODELO_MOTORISTA");
+  w("            WAIT 0");
+  w("        ENDWHILE");
+  w("        // pequena espera aleatoria, como no mod original");
+  w("        GENERATE_RANDOM_INT_IN_RANGE 0 2000 sorteio");
+  w("        WAIT sorteio");
+  w("        CREATE_CAR modelo nasc_x nasc_y ALTURA_NASCIMENTO onibus");
+  w("        SET_CAR_HEADING onibus nasc_h");
+  w("        CHANGE_CAR_COLOUR onibus " + Number(cor[0]) + " " + Number(cor[cor.length-1]));
+  w("        CREATE_CHAR_INSIDE_CAR onibus PEDTYPE_CIVMALE MODELO_MOTORISTA motorista");
+  w("        MARK_MODEL_AS_NO_LONGER_NEEDED modelo");
+  w("        MARK_MODEL_AS_NO_LONGER_NEEDED MODELO_MOTORISTA");
+  w("        viagem_ativa = 1");
+  w("        embarque = 0");
+  w("        perto = 0");
+  if (st.blip !== false) w("        ADD_BLIP_FOR_CAR onibus blip");
+  w("        RETURN");
+  w("");
+  w("    // Faz o onibus ir ate tx/ty/tz na velocidade veloc.");
+  w("    dirigir:");
+  w("        SET_CAR_CRUISE_SPEED onibus veloc");
+  w("        CAR_WANDER_RANDOMLY onibus");
+  w("        CAR_GOTO_COORDINATES_ACCURATE onibus tx ty tz");
+  w("        RETURN");
+  w("");
+  w("    // Espera o onibus chegar em tx/ty/tz (com checagens de abandono).");
+  w("    esperar_chegada:");
+  w("        timeout = 0");
+  w("        WHILE viagem_ativa = 1");
+  w("            IF LOCATE_CAR_2D onibus tx ty raio_chegada raio_chegada false");
+  w("                RETURN");
+  w("            ENDIF");
+  w("            WAIT MS_PORTA");
+  w("            timeout += MS_PORTA");
+  w("            IF timeout > ESPERA_TIME_OUT");
+  w("                viagem_ativa = 0");
+  w("            ENDIF");
+  w("            GOSUB checar_viagem");
+  w("        ENDWHILE");
+  w("        RETURN");
+  w("");
+  w("    // Encerra a viagem se o jogador se afastou demais ou se o");
+  w("    // onibus/motorista morreu. O primeiro \"perto\" e obrigatorio:");
+  w("    // algumas paradas ficam a mais de dist_abandono uma da outra e o");
+  w("    // onibus precisa chegar ate o jogador antes de valer o abandono.");
+  w("    checar_viagem:");
+  w("        IF LOCATE_CHAR_ANY_MEANS_CAR_2D cara onibus dist_abandono dist_abandono false");
+  w("            perto = 1");
+  w("        ELSE");
+  w("            IF perto = 1");
+  w("                viagem_ativa = 0");
+  w("            ENDIF");
+  w("        ENDIF");
+  w("        IF IS_CAR_DEAD onibus");
+  w("            viagem_ativa = 0");
+  w("        ENDIF");
+  w("        IF IS_CHAR_DEAD motorista");
+  w("            viagem_ativa = 0");
+  w("        ENDIF");
+  w("        RETURN");
+  w("");
+  w("    // Embarque/desembarque do jogador + cobranca da passagem.");
+  w("    // embarque: 0 = fora do onibus, 1 = embarcou (paga), 2 = pagou");
+  w("    checar_embarque:");
+  w("        IF IS_CHAR_IN_CAR cara onibus");
+  w("            IF embarque = 1");
+  w("                PRINT_HELP BUSFARE");
+  w("                ADD_SCORE 0 PASSAGEM_DESCONTO  // 0 = jogador local");
+  w("                embarque = 2");
+  w("                WAIT 1000");
+  w("            ENDIF");
+  w("        ELSE");
+  w("            embarque = 0");
+  w("            IF LOCATE_CHAR_ANY_MEANS_CAR_2D cara onibus raio_embarque raio_embarque false");
+  w("                IF IS_KEY_PRESSED VK_KEY_Y");
+  w("                    TASK_ENTER_CAR_AS_PASSENGER cara onibus -1 -1");
+  w("                    OPEN_CAR_DOOR_A_BIT onibus FRONT_RIGHT_DOOR 1.0");
+  w("                    embarque = 1");
+  w("                ENDIF");
+  w("            ENDIF");
+  w("        ENDIF");
+  w("        RETURN");
+  w("");
+  w("    // Pausa do motorista no terminal: desce, vai ate o ponto de");
+  w("    // descanso (tx/ty/tz), espera e volta para o onibus.");
+  w("    pausa_motorista:");
+  w("        TASK_LEAVE_CAR motorista onibus");
+  w("        WAIT 2000");
+  w("        TASK_GO_STRAIGHT_TO_COORD motorista tx ty tz 4 -1");
+  w("        GENERATE_RANDOM_INT_IN_RANGE PAUSA_MIN PAUSA_MAX pausa");
+  w("        WAIT pausa");
+  w("        TASK_ENTER_CAR_AS_DRIVER motorista onibus TEMPO_MOTORISTA");
+  w("        WAIT TEMPO_MOTORISTA");
+  w("        RETURN");
+  w("");
+  w("    // Animacao das portas: o mod original abre/fecha em passos de 0.05");
+  w("    // a cada 30 ms, dando o efeito de porta de onibus.");
+  w("    abrir_portas:");
+  w("        angulo = 0.0");
+  w("        WHILE angulo < 1.0");
+  w("            angulo += PASSO_PORTA");
+  w("            IF angulo > 1.0");
+  w("                angulo = 1.0");
+  w("            ENDIF");
+  portas.forEach(d => w("            OPEN_CAR_DOOR_A_BIT onibus " + porta(0, d) + " angulo"));
+  w("            WAIT MS_PORTA");
+  w("        ENDWHILE");
+  w("        RETURN");
+  w("");
+  w("    fechar_portas:");
+  w("        angulo = 1.0");
+  w("        WHILE angulo > 0.0");
+  w("            angulo -= PASSO_PORTA");
+  w("            IF angulo < 0.0");
+  w("                angulo = 0.0");
+  w("            ENDIF");
+  portas.slice().reverse().forEach(d => w("            OPEN_CAR_DOOR_A_BIT onibus " + porta(0, d) + " angulo"));
+  w("            WAIT MS_PORTA");
+  w("        ENDWHILE");
+  w("        RETURN");
+  w("");
+  w("    // ==================================================================");
+  w("    //  FIM DA VIAGEM");
+  w("    // ==================================================================");
+  w("    encerrar:");
+  w("        SET_CAR_CRUISE_SPEED onibus 0.0");
+  w("        IF IS_CHAR_IN_CAR cara onibus");
+  w("            TASK_LEAVE_CAR_IMMEDIATELY cara onibus");
+  w("            WAIT 500");
+  w("        ENDIF");
+  if (st.blip !== false) w("        REMOVE_BLIP blip");
+  w("        DELETE_CAR onibus");
+  w("        MARK_CHAR_AS_NO_LONGER_NEEDED motorista");
+  w("        viagem_ativa = 0");
+  w("        embarque = 0");
+  w("        espera = 0");
+  w("        perto = 0");
+  w("        GOTO parada_1");
+  w("");
+  w("    // ==================================================================");
+  w("    //  FLUXO PRINCIPAL - espera do jogador, trechos e paradas");
+  w("    // ==================================================================");
+  w("    iniciar:");
+  w("        WAIT 15000");
+  w("        PRINT_HELP DEUCE");
+  w("");
+
+  // ---- disparos (espera do jogador em cada ponto) ----
+  paradas.forEach((p, i) => {
+    const prox = paradas[(i + 1) % paradas.length];
+    w("    // ==================================================================");
+    w("    //  PARADA " + p.index + " - " + (p.textLabel || "?") + (p.terminal ? "  [TERMINAL]" : ""));
+    w("    //  Ponto de espera: " + num(p.x) + ", " + num(p.y) +
+      "  (a pe, raio " + num(st.stopRadius === undefined ? 20.0 : st.stopRadius) + ")");
+    w("    // ==================================================================");
+    w("    parada_" + p.index + ":");
+    w("        WAIT 0");
+    w("        IF LOCATE_CHAR_ANY_MEANS_2D cara " + num(p.x) + " " + num(p.y) + " raio_espera raio_espera false");
+    w("            PRINT_HELP " + (p.waitText || "BUS_T1"));
+    w("            WAIT 3000");
+    w("            PRINT_HELP ON_BUS");
+    const ant = paradas[(i - 1 + paradas.length) % paradas.length];
+    w("            // nasce na parada " + ant.index + " e dirige ate aqui");
+    w("            nasc_x = " + num(ant.x));
+    w("            nasc_y = " + num(ant.y));
+    w("            nasc_h = " + num(ant.spawnHeading));
+    w("            GOSUB nascer_onibus");
+    w("            GOTO trecho_" + p.index);
+    w("        ENDIF");
+    w("        GOTO parada_" + prox.index);
+    w("");
+  });
+
+  // ---- trechos + paradas ----
+  paradas.forEach((p, i) => {
+    const prox = paradas[(i + 1) % paradas.length];
+    const wps = (p.leg && p.leg.waypoints) || [];
+    w("    // ---- trecho " + (p.leg ? p.leg.from : "") + " -> " + (p.leg ? p.leg.to : "") +
+      " (" + wps.length + " ponto(s)) ----");
+    w("    trecho_" + p.index + ":");
+    if (!wps.length) w("        // (trecho sem pontos: segue direto para a parada)");
+    wps.forEach((wp, n) => {
+      w("        // ponto " + (n + 1) + "/" + wps.length);
+      w("        tx = " + num(wp.x));
+      w("        ty = " + num(wp.y));
+      w("        tz = " + num(wp.z === undefined ? 11.0 : wp.z));
+      w("        veloc = " + num(wp.speed === undefined ? 15.0 : wp.speed));
+      w("        GOSUB dirigir");
+      w("        GOSUB esperar_chegada");
+      w("        IF viagem_ativa = 0");
+      w("            GOTO encerrar");
+      w("        ENDIF");
+    });
+    w("");
+    w("    // ---- parada " + p.index + ": portas, embarque, anuncio ----");
+    w("        SET_CAR_CRUISE_SPEED onibus 0.0");
+    w("        WAIT 2000");
+    w("        GOSUB abrir_portas");
+    w("        GENERATE_RANDOM_INT_IN_RANGE " + (p.terminal ? "PAUSA_MIN PAUSA_MAX" : "ESPERA_MIN ESPERA_MAX") + " espera");
+    w("        WHILE espera > 0");
+    w("            WAIT MS_PORTA");
+    w("            GOSUB checar_viagem");
+    w("            GOSUB checar_embarque");
+    w("            espera -= MS_PORTA");
+    w("        ENDWHILE");
+    w("        GOSUB fechar_portas");
+    w("        IF viagem_ativa = 0");
+    w("            GOTO encerrar");
+    w("        ENDIF");
+    const anuncio = (prox && prox.textLabel) || p.announceNextLabel;
+    if (anuncio) {
+      w("        // avisa os passageiros qual e a proxima parada");
+      w("        IF IS_CHAR_IN_CAR cara onibus");
+      w("            PRINT_HELP " + anuncio);
+      w("        ENDIF");
+    }
+    if (p.terminal && p.layover) {
+      w("        // terminal: pausa do motorista");
+      w("        tx = " + num(p.layover.x));
+      w("        ty = " + num(p.layover.y));
+      w("        tz = " + num(p.layover.z === undefined ? 11.0 : p.layover.z));
+      w("        GOSUB pausa_motorista");
+      w("        IF viagem_ativa = 0");
+      w("            GOTO encerrar");
+      w("        ENDIF");
+    }
+    w("");
+    w("        GOTO trecho_" + prox.index);
+    w("");
+  });
+
+  w("}");
+  w("SCRIPT_END");
+  w("");
+  w("// paradas: " + paradas.length + " | total de pontos de trajeto: " +
+    paradas.reduce((s, p) => s + (((p.leg || {}).waypoints || []).length), 0));
+  return L.join("\n") + "\n";
+}
+
+/* ------------------------------------------------------------------- estado */
+let rota = linhaNova();
+const $ = id => document.getElementById(id);
+function aviso(txt, ok){
+  const el = $("status");
+  el.textContent = txt;
+  el.style.color = ok ? "#9defd4" : "#ffd08a";
+}
+
+function carregar(dados){
+  rota = dados;
+  rota.settings = Object.assign(linhaNova().settings, rota.settings || {});
+  rota.stops = (rota.stops || []).map((p, i) => Object.assign(paradaVazia(i + 1, null), p));
+  rota.stops.forEach((p, i) => { p.index = i + 1; });
+  sincronizarFormulario();
+  desenhar();
+  salvarAuto();   // o que foi importado passa a ser o rascunho
+}
+
+function sincronizarFormulario(){
+  const l = rota, s = l.settings;
+  $("cId").value = l.id || "";
+  $("cNome").value = l.name || "";
+  $("cDesc").value = l.description || "";
+  $("cTarifa").value = s.fare === undefined ? 2 : s.fare;
+  $("cModA").value = (s.vehicleModels || [431,437])[0];
+  $("cModB").value = (s.vehicleModels || [431,437])[(s.vehicleModels || [431,437]).length-1];
+  $("cMotorista").value = s.driverModel === undefined ? 7 : s.driverModel;
+  $("cCor").value = (s.colours || [1,1])[0];
+  $("cBlip").checked = s.blip !== false;
+  $("cRaioPonto").value = s.stopRadius;
+  $("cRaioEmb").value = s.boardRadius;
+  $("cRaioCheg").value = s.arriveRadius;
+  $("cAbandono").value = s.abandonDistance;
+  $("cEsperaMin").value = s.dwellTimeMin;
+  $("cEsperaMax").value = s.dwellTimeMax;
+  $("cPausaMin").value = s.layoverTimeMin;
+  $("cPausaMax").value = s.layoverTimeMax;
+}
+
+function lerFormulario(){
+  const s = rota.settings;
+  rota.id = $("cId").value.trim() || "000";
+  rota.name = $("cNome").value.trim();
+  rota.description = $("cDesc").value.trim();
+  s.fare = Number($("cTarifa").value) || 0;
+  s.vehicleModels = [Number($("cModA").value) || 431, Number($("cModB").value) || 437];
+  s.driverModel = Number($("cMotorista").value) || 7;
+  const cor = Number($("cCor").value) || 1;
+  s.colours = [cor, cor];
+  s.blip = $("cBlip").checked;
+  s.stopRadius = Number($("cRaioPonto").value) || 20;
+  s.boardRadius = Number($("cRaioEmb").value) || 10;
+  s.arriveRadius = Number($("cRaioCheg").value) || 3;
+  s.abandonDistance = Number($("cAbandono").value) || 250;
+  s.dwellTimeMin = Number($("cEsperaMin").value) || 5000;
+  s.dwellTimeMax = Number($("cEsperaMax").value) || 10000;
+  s.dwellTime = Math.round((s.dwellTimeMin + s.dwellTimeMax) / 2);
+  s.layoverTimeMin = Number($("cPausaMin").value) || 25000;
+  s.layoverTimeMax = Number($("cPausaMax").value) || 40000;
+  s.layoverTime = Math.round((s.layoverTimeMin + s.layoverTimeMax) / 2);
+  return s.dwellTimeMin < s.dwellTimeMax && s.layoverTimeMin < s.layoverTimeMax;
+}
+
+/* ------------------------------------------------------------------ desenho */
+function esc(v){ return String(v === undefined || v === null ? "" : v)
+  .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+
+function desenhar(){
+  $("contParadas").textContent = "(" + rota.stops.length + ")";
+  const alvo = $("listaParadas");
+  alvo.innerHTML = rota.stops.map((p, i) => {
+    const wps = ((p.leg || {}).waypoints) || [];
+    const linhas = wps.map((w, j) => `
+      <tr>
+        <td>${j+1}</td>
+        <td><input data-wp="${i}:${j}:x" type="number" step="0.01" value="${esc(w.x)}"></td>
+        <td><input data-wp="${i}:${j}:y" type="number" step="0.01" value="${esc(w.y)}"></td>
+        <td><input data-wp="${i}:${j}:z" type="number" step="0.01" value="${esc(w.z === undefined ? 11 : w.z)}"></td>
+        <td><input data-wp="${i}:${j}:speed" type="number" step="0.5" value="${esc(w.speed === undefined ? 15 : w.speed)}"></td>
+        <td><button data-rm="${i}:${j}" class="perigo" title="remover ponto">×</button></td>
+      </tr>`).join("");
+    return `
+    <div class="cartao" data-p="${i}">
+      <div class="cartao cabeca">
+        <div><span class="num">${i+1}</span>
+          <span class="mini">${esc(p.textLabel || "")} · ${wps.length} ponto(s) de trajeto</span></div>
+        <div>
+          <button data-sobe="${i}" title="mover para cima">↑</button>
+          <button data-desce="${i}" title="mover para baixo">↓</button>
+          <button data-dup="${i}" title="duplicar">⧉</button>
+          <button data-del="${i}" class="perigo" title="remover parada">remover</button>
+        </div>
+      </div>
+      <div class="grade4">
+        <div><label>X do ponto</label><input data-p${i}="x" type="number" step="0.01" value="${esc(p.x)}"></div>
+        <div><label>Y do ponto</label><input data-p${i}="y" type="number" step="0.01" value="${esc(p.y)}"></div>
+        <div><label>Z (nível)</label><input data-p${i}="z" type="number" step="0.01" value="${esc(p.z === undefined ? 11 : p.z)}"></div>
+        <div><label>Direção (graus)</label><input data-p${i}="spawnHeading" type="number" step="1" value="${esc(p.spawnHeading)}"></div>
+      </div>
+      <div class="linha">
+        <div><label>Texto da parada (GXT, 7 letras)</label><input data-p${i}="textLabel" maxlength="7" value="${esc(p.textLabel)}"></div>
+        <div><label>Texto ao esperar</label><input data-p${i}="waitText" maxlength="7" value="${esc(p.waitText || "BUS_T1")}"></div>
+      </div>
+      <div class="linha" style="margin-top:6px;align-items:center">
+        <div><label><input type="checkbox" data-p${i}="terminal" ${p.terminal ? "checked" : ""}> Terminal (pausa do motorista)</label></div>
+        <div><label>Portas de embarque</label><input data-p${i}="doorsBoard" value="${esc((p.doorsBoard||NORMAIS).join(","))}"></div>
+        <div><label>Portas de saída</label><input data-p${i}="doorsExit" value="${esc((p.doorsExit||SAIDA).join(","))}"></div>
+      </div>
+      ${p.terminal ? `
+      <div class="grade4">
+        <div><label>Descanso X</label><input data-p${i}="layX" type="number" step="0.01" value="${esc((p.layover||{}).x || 0)}"></div>
+        <div><label>Descanso Y</label><input data-p${i}="layY" type="number" step="0.01" value="${esc((p.layover||{}).y || 0)}"></div>
+        <div><label>Descanso Z</label><input data-p${i}="layZ" type="number" step="0.01" value="${esc((p.layover||{}).z === undefined ? 11 : p.layover.z)}"></div>
+      </div>` : ""}
+      <h3 style="margin-top:12px">Trajeto da parada anterior até aqui</h3>
+      <table>
+        <thead><tr><th>#</th><th>X</th><th>Y</th><th>Z</th><th>Velocidade</th><th></th></tr></thead>
+        <tbody>${linhas}</tbody>
+      </table>
+      <div class="barra">
+        <button data-addwp="${i}">+ ponto</button>
+        <button data-addwp2="${i}" title="usa o ponto de espera desta parada">+ ponto no destino</button>
+        <button data-colawp="${i}">colar lista de pontos…</button>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+/* ------------------------------------------------------------- operações */
+function reindexar(){ rota.stops.forEach((p, i) => { p.index = i + 1; p.leg.to = i + 1; });
+  rota.stops.forEach((p, i) => { p.leg.from = (i === 0 ? rota.stops.length : i); }); }
+
+function removerParada(i){
+  if (rota.stops.length <= 2) { aviso("Uma linha precisa de pelo menos 2 paradas."); return; }
+  rota.stops.splice(i, 1); reindexar(); desenhar(); salvarAuto();
+}
+function mover(i, d){
+  const j = i + d;
+  if (j < 0 || j >= rota.stops.length) return;
+  const tmp = rota.stops[i]; rota.stops[i] = rota.stops[j]; rota.stops[j] = tmp;
+  reindexar(); desenhar(); salvarAuto();
+}
+function duplicar(i){
+  const copia = JSON.parse(JSON.stringify(rota.stops[i]));
+  rota.stops.splice(i + 1, 0, copia); reindexar(); desenhar(); salvarAuto();
+}
+function addPonto(i, noDestino){
+  const p = rota.stops[i];
+  p.leg = p.leg || {waypoints: []};
+  const u = p.leg.waypoints[p.leg.waypoints.length - 1] || {z: 11, speed: 10};
+  if (noDestino) p.leg.waypoints.push({x: p.x, y: p.y, z: p.z === undefined ? 11 : p.z, speed: 5, radius: 3});
+  else p.leg.waypoints.push({x: u.x, y: u.y, z: u.z, speed: 10, radius: 3});
+  desenhar(); salvarAuto();
+}
+function colarPontos(i){
+  const txt = prompt("Cole os pontos, um por linha:\nX Y [Z] [velocidade]");
+  if (!txt) return;
+  const p = rota.stops[i];
+  p.leg = p.leg || {waypoints: []};
+  txt.split(/\r?\n/).forEach(linha => {
+    const n = linha.trim().split(/[\s,;]+/).map(Number).filter(v => !isNaN(v));
+    if (n.length >= 2) p.leg.waypoints.push({
+      x: n[0], y: n[1], z: n.length > 2 ? n[2] : 11, speed: n.length > 3 ? n[3] : 10, radius: 3});
+  });
+  desenhar(); salvarAuto();
+}
+
+/* --------------------------------------------------------------- eventos */
+$("listaParadas").addEventListener("input", ev => {
+  const alvo = ev.target;
+  // campos data-pN="campo"
+  const chaveP = Object.keys(alvo.dataset).find(k => /^p\d+$/.test(k));
+  if (chaveP){
+    const i = Number(chaveP.slice(1)); const campo = alvo.dataset[chaveP]; const p = rota.stops[i];
+    if (campo === "doorsBoard" || campo === "doorsExit"){
+      p[campo] = alvo.value.split(",").map(v => Number(v.trim())).filter(v => !isNaN(v));
+    } else if (["x","y","z","spawnHeading"].indexOf(campo) >= 0){
+      p[campo] = Number(alvo.value) || 0;
+    } else if (campo === "textLabel" || campo === "waitText"){
+      p[campo] = alvo.value.toUpperCase().replace(/[^A-Z0-9_]/g, "") || (campo === "waitText" ? "BUS_T1" : "PARADA");
+    } else if (campo === "terminal"){
+      p.terminal = alvo.checked;
+      if (p.terminal && !p.layover) p.layover = {x: p.x, y: p.y, z: p.z === undefined ? 11 : p.z};
+      if (!p.terminal) p.layover = null;
+      desenhar();
+    } else if (campo.indexOf("lay") === 0){
+      p.layover = p.layover || {x:0, y:0, z:11};
+      const c = campo[3].toLowerCase();
+      p.layover[c] = Number(alvo.value) || 0;
+    }
+    salvarAuto();
+    return;
+  }
+  if (alvo.dataset.wp){
+    const [i, j, campo] = alvo.dataset.wp.split(":");
+    const wp = rota.stops[Number(i)].leg.waypoints[Number(j)];
+    wp[campo] = Number(alvo.value) || 0;
+    salvarAuto();
+  }
+});
+
+$("listaParadas").addEventListener("click", ev => {
+  const d = ev.target.dataset || {};
+  if (d.del !== undefined) removerParada(Number(d.del));
+  else if (d.sobe !== undefined) mover(Number(d.sobe), -1);
+  else if (d.desce !== undefined) mover(Number(d.desce), 1);
+  else if (d.dup !== undefined) duplicar(Number(d.dup));
+  else if (d.addwp !== undefined) addPonto(Number(d.addwp), false);
+  else if (d.addwp2 !== undefined) addPonto(Number(d.addwp2), true);
+  else if (d.colawp !== undefined) colarPontos(Number(d.colawp));
+  else if (d.rm !== undefined){
+    const [i, j] = d.rm.split(":").map(Number);
+    rota.stops[i].leg.waypoints.splice(j, 1); desenhar(); salvarAuto();
+  }
+});
+
+["cId","cNome","cDesc","cTarifa","cModA","cModB","cMotorista","cCor","cBlip",
+ "cRaioPonto","cRaioEmb","cRaioCheg","cAbandono","cEsperaMin","cEsperaMax",
+ "cPausaMin","cPausaMax"].forEach(id => $(id).addEventListener("change", () => {
+  if (!lerFormulario()) { $("cfgStatus").style.display = "block";
+    $("cfgStatus").textContent = "Atenção: o tempo mínimo deve ser menor que o máximo."; }
+  else $("cfgStatus").style.display = "none";
+  salvarAuto();
+}));
+
+$("bAddParada").onclick = () => {
+  const dur = rota.stops[rota.stops.length - 1];
+  rota.stops.push(paradaVazia(rota.stops.length + 1, dur));
+  reindexar(); desenhar(); salvarAuto();
+};
+$("bAddSequencia").onclick = () => {
+  const dur = rota.stops[rota.stops.length - 1];
+  const coords = prompt("Coordenada do ponto de espera (X Y [Z]):", (dur.x + 20) + " " + dur.y + " 11");
+  if (!coords) return;
+  const n = coords.trim().split(/[\s,;]+/).map(Number).filter(v => !isNaN(v));
+  if (n.length < 2) return;
+  const p = paradaVazia(rota.stops.length + 1, dur);
+  p.x = n[0]; p.y = n[1]; p.z = n.length > 2 ? n[2] : 11;
+  p.spawnHeading = dur.spawnHeading;
+  p.leg.waypoints[0] = {x: dur.x, y: dur.y, z: dur.z || 11, speed: 15, radius: 3};
+  p.leg.waypoints[1] = {x: n[0], y: n[1], z: p.z, speed: 10, radius: 3};
+  p.leg.waypoints[2] = {x: n[0], y: n[1], z: p.z, speed: 5, radius: 3};
+  p.textLabel = "PAR" + (rota.stops.length + 1);
+  rota.stops.push(p); reindexar(); desenhar(); salvarAuto();
+};
+
+$("bNovo").onclick = () => {
+  if (!confirm("Começar uma linha nova? O que está na tela será perdido (o navegador guarda um rascunho).")) return;
+  rota = linhaNova(); sincronizarFormulario(); desenhar(); salvarAuto();
+};
+$("bExemplo").onclick = () => { rota = exemplo(); sincronizarFormulario(); desenhar(); salvarAuto();
+  aviso("Exemplo carregado.", true); };
+
+$("bBaixarJson").onclick = () => {
+  lerFormulario(); baixar("rota_" + (rota.id || "000") + ".json", JSON.stringify(rota, null, 2), "application/json");
+};
+$("bCopiarJson").onclick = () => {
+  lerFormulario(); copiar(JSON.stringify(rota, null, 2), "JSON copiado — cole no chat para o assistente montar o script.");
+};
+
+$("bGerar").onclick = () => {
+  lerFormulario();
+  if (rota.stops.length < 2){ aviso("Adicione pelo menos 2 paradas."); return; }
+  const semPonto = rota.stops.filter(p => !((p.leg || {}).waypoints || []).length).length;
+  const sc = gerarScript(rota, {nome: "BUS" + (rota.id || "000")});
+  $("dlgTitulo").textContent = "gta3script de " + rota.name;
+  $("dlgDica").textContent = "Salve como BUS" + (rota.id || "000") + ".sc e compile com: " +
+    "gta3sc compile BUS" + (rota.id || "000") + ".sc --config=gtasa --guesser --cs -o BUS" + (rota.id || "000") + ".cs" +
+    (semPonto ? "  (atenção: " + semPonto + " parada(s) sem pontos de trajeto)" : "");
+  $("saida").value = sc;
+  $("saida").dataset.nome = "BUS" + (rota.id || "000") + ".sc";
+  if (typeof $("dlgSaida").showModal === "function") $("dlgSaida").showModal();
+  else $("dlgSaida").setAttribute("open", "");
+};
+$("bCopiarSaida").onclick = () => copiar($("saida").value, "Script copiado.");
+$("bBaixarSaida").onclick = () => baixar($("saida").dataset.nome || "rota.sc", $("saida").value, "text/plain");
+$("bFechar").onclick = () => { if (typeof $("dlgSaida").close === "function") $("dlgSaida").close(); else $("dlgSaida").removeAttribute("open"); };
+
+$("fJson").addEventListener("change", ev => {
+  const arq = ev.target.files[0];
+  if (!arq) return;
+  const fr = new FileReader();
+  fr.onload = () => {
+    try { carregar(JSON.parse(fr.result)); aviso("JSON importado: " + arq.name, true); }
+    catch (e) { aviso("Não consegui ler o JSON: " + e.message); }
+  };
+  fr.readAsText(arq);
+});
+
+/* ------------------------------------------------------------ utilidades */
+function baixar(nome, texto, tipo){
+  const b = new Blob([texto], {type: tipo || "text/plain"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(b); a.download = nome;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+}
+function copiar(texto, msg){
+  navigator.clipboard.writeText(texto).then(
+    () => aviso(msg || "Copiado.", true),
+    () => aviso("O navegador não deixou copiar — use Baixar."));
+}
+function salvarAuto(){
+  try { localStorage.setItem("busroute_evolved", JSON.stringify(rota)); } catch (e) {}
+}
+function carregarAuto(){
+  try {
+    const t = localStorage.getItem("busroute_evolved");
+    if (t) { carregar(JSON.parse(t)); return true; }
+  } catch (e) {}
+  return false;
+}
+
+/* arranque */
+if (!carregarAuto()) { rota = exemplo(); sincronizarFormulario(); desenhar(); }
+aviso("Rascunho salvo automaticamente neste navegador.");
+
+/* permite usar o gerador fora do navegador (testes) */
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = {gerarScript: gerarScript, linhaNova: linhaNova, exemplo: exemplo};
+}
+</script>
+</body>
+</html>
