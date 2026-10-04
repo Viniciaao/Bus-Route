@@ -33,11 +33,10 @@ fi
 for json in "${routes[@]}"; do
     id="$(python3 -c "import json,sys;print(json.load(open('$json'))['id'])" 2>/dev/null || echo 000)"
     sc="source/BUS${id}.sc"
-    cs="source/BUS${id}.cs"
     echo "== rota ${id}: ${json}"
     python3 tools/generate_script.py "$json" -o "$sc"
-    "$GTA3SC" compile "$sc" --config=gtasa --guesser --cs -o "$cs"
-    cp -f "$cs" "CLEO/"
+    # compila direto para CLEO/ (o .cs pronto para instalar)
+    "$GTA3SC" compile "$sc" --config=gtasa --guesser --cs -o "CLEO/BUS${id}.cs"
 done
 
 echo
